@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -15,19 +16,19 @@
           <span class="visually-hidden">Открыть меню.</span>
         </button>
         <div class="main-nav__wrapper main-nav__wrapper--close">
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list site-list clear-list">
             <li class="site-list__item site-list__item--current">
-              <a href="#">
+              <a class="site-list__link" href="#">
                 Главная
               </a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html">
+              <a class="site-list__link" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">
+              <a class="site-list__link" href="form.html">
                 Подбор программы
               </a>
             </li>
@@ -41,8 +42,8 @@
         <div class="main-promo__wrapper">
           <h1 class="main-promo__title title">Функциональное питание для котов</h1>
           <p class="main-promo__slogan">Занялся собой? Займись котом!</p>
-          <a class="main-promo__button button" href="form.html">Подобрать программу</a>
         </div>
+        <a class="main-promo__button button" href="form.html">Подобрать программу</a>
       </section>
 
       <section class="nutrition-selection">
@@ -61,7 +62,7 @@
       <section class="advantages">
         <div class="advantages__wrapper">
           <h2 class="advantages__title">Как это работает</h2>
-          <ul class="advantages__list">
+          <ul class="advantages__list clear-list">
             <li class="advantages__item advantages__item--consist">
               <h3 class="visually-hidden">Состав.</h3>
               <p class="advantages__description">Функциональное питание содержит только полезные питательные вещества.</p>
@@ -117,7 +118,7 @@
           <img src="img/footer-logo.svg" width="128" height="24" alt="Сайт «Cat Energy».">
         </a>
         <div class="main-footer__social social">
-          <ul class="social__list">
+          <ul class="social__list clear-list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
             </li>

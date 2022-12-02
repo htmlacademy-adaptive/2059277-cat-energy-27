@@ -1,0 +1,30 @@
+.main-promo {
+  color: #ffffff;
+  background-color: #ffffff;
+}
+
+.main-promo__wrapper {
+  width: 320px;
+  height: 302px;
+  margin-bottom: 138px;
+  padding-top: 27px;
+  background-color: #68b738;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/cat-background-mobile.jpg");
+  background-position: center;
+  background-size: 100% auto, cover;
+  background-repeat: no-repeat;
+}
+
+.main-promo__slogan {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-promo__button {
+  width: 280px;
+  padding: 7px 44px;
+}
