@@ -1,5 +1,5 @@
 .main-promo {
-  color: #ffffff;
+  color: $white-color;
 }
 
 .main-promo__wrapper {
@@ -7,15 +7,15 @@
   height: 302px;
   margin-bottom: 138px;
   padding-top: 27px;
-  background-color: #68b738;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../../img/cat-background-index.jpg");
+  background-color: $green-color;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-background-index.jpg");
   background-position: center;
   background-size: 100% auto, cover;
   background-repeat: no-repeat;
 }
 
 .main-promo__slogan {
-  font-family: "Oswald", sans-serif;
+  font-family: $main-font;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;

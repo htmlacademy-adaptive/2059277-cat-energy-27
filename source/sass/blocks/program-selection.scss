@@ -1,6 +1,6 @@
 .program-selection {
-  color: #000000;
-  background-color: #ffffff;
+  color: $black-color;
+  background-color: $white-color;
 }
 
 .program-selection__title {
@@ -8,7 +8,7 @@
 }
 
 .program-selection__discription {
-  font-family: "Oswald", sans-serif;
+  font-family: $main-font;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;

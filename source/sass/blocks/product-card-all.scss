@@ -3,22 +3,22 @@
 }
 
 .product-card-all__link-title {
-  color: #000000;
+  color: $black-color;
   text-decoration: none;
 }
 
 .product-card-all__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $main-font;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  color: #222222;
+  color: $silver-200-color;
 }
 
 .product-card-all__description {
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  color: $silver-color;
 }
 
 .product-card-all__button {

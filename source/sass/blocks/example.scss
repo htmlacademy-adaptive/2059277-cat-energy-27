@@ -1,5 +1,5 @@
 .example__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $main-font;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
@@ -12,7 +12,7 @@
 }
 
 .example__block-definition {
-  font-family: "Oswald", sans-serif;
+  font-family: $main-font;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
@@ -20,7 +20,7 @@
 }
 
 .example__expenses {
-  font-family: "Oswald", sans-serif;
+  font-family: $main-font;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;

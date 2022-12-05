@@ -1,0 +1,22 @@
+.owner-item {
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $silver-color;
+  text-transform: uppercase;
+}
+
+.owner-item__input {
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $silver-color;
+  border: 1px solid $white-200-color;
+  text-transform: uppercase;
+
+  &::placeholder {
+    color: $silver-color;
+  }
+}

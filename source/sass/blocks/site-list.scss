@@ -4,7 +4,7 @@
 
 .site-list__item {
   padding: 22px 70px;
-  font-family: "Oswald", sans-serif;
+  font-family: $main-font;
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
@@ -12,8 +12,8 @@
 }
 
 .site-list__link {
-  color: #000000;
-  background-color: #ffffff;
+  color: $black-color;
+  background-color: $white-color;
   text-transform: uppercase;
   text-decoration: none;
 }

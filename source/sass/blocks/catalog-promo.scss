@@ -1,14 +1,14 @@
 .catalog-promo {
   width: 280px;
   height: 290px;
-  color: #ffffff;
+  color: $white-color;
 }
 
 .catalog-promo__wrapper {
   margin-bottom: 35px;
   padding: 187px 60px 43px;
-  background-color: #68b738;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../../img/cat-background-catalog.jpg");
+  background-color: $green-color;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-background-catalog.jpg");
   background-position: center;
   background-size: 100% auto, cover;
   background-repeat: no-repeat;
