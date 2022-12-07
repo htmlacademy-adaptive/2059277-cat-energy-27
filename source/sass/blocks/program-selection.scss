@@ -15,6 +15,26 @@
   text-transform: uppercase;
 }
 
+.program-selection__pet-data {
+  @include reset-indents;
+}
+
+.program-selection__target {
+  @include reset-indents;
+}
+
+.program-selection__owner-data {
+  @include reset-indents;
+}
+
+.program-selection__comment {
+  @include reset-indents;
+}
+
+.program-selection__additionally {
+  @include reset-indents;
+}
+
 .program-selection__button {
   padding: 7px 44px;
 }
