@@ -1,0 +1,46 @@
+.program-selection {
+  color: $black-color;
+  background-color: $white-color;
+}
+
+.program-selection__title {
+  text-align: start;
+}
+
+.program-selection__discription {
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.program-selection__pet-data {
+  @include reset-indents;
+}
+
+.program-selection__target {
+  @include reset-indents;
+}
+
+.program-selection__owner-data {
+  @include reset-indents;
+}
+
+.program-selection__comment {
+  @include reset-indents;
+}
+
+.program-selection__additionally {
+  @include reset-indents;
+}
+
+.program-selection__button {
+  padding: 7px 44px;
+}
+
+.program-selection__legend {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+}

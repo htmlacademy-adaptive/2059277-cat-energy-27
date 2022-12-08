@@ -1,0 +1,20 @@
+.contacts {
+  color: $black-color;
+  background-color: $white-color;
+}
+
+.contacts__title {
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $silver-400-color;
+  text-transform: uppercase;
+}
+
+.contacts__description {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $silver-color;
+}

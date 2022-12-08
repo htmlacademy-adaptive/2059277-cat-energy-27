@@ -1,0 +1,26 @@
+.product-card-all {
+  text-align: center;
+}
+
+.product-card-all__link-title {
+  color: $black-color;
+  text-decoration: none;
+}
+
+.product-card-all__title {
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $silver-200-color;
+}
+
+.product-card-all__description {
+  font-size: 12px;
+  line-height: 16px;
+  color: $silver-color;
+}
+
+.product-card-all__button {
+  padding: 10px 94px;
+}

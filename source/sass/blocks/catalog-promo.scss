@@ -1,0 +1,22 @@
+.catalog-promo {
+  width: 280px;
+  height: 290px;
+  color: $white-color;
+}
+
+.catalog-promo__wrapper {
+  margin-bottom: 35px;
+  padding: 187px 60px 43px;
+  background-color: $green-color;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-background-catalog.jpg");
+  background-position: center;
+  background-size: 100% auto, cover;
+  background-repeat: no-repeat;
+}
+
+.catalog-promo__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}

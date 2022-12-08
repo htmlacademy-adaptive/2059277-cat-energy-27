@@ -1,0 +1,29 @@
+.example__title {
+  font-family: $main-font;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.example__block-term {
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: lowercase;
+}
+
+.example__block-definition {
+  font-family: $main-font;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.example__expenses {
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
