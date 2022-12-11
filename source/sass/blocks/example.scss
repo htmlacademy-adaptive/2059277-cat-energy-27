@@ -1,8 +1,19 @@
+.example__wrapper {
+  display: grid;
+  grid-template-columns: 124px 124px;
+  grid-column-gap: 32px;
+}
+
 .example__title {
+  grid-column: 1 / -1;
   font-family: $main-font;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+}
+
+.example__description {
+  grid-column: 1 / -1;
 }
 
 .example__block-term {
@@ -20,10 +31,51 @@
 }
 
 .example__expenses {
+  grid-column: 1 / -1;
   font-family: $main-font;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
+}
+
+.example__cat-slider {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: $tablet-width) {
+  .example__wrapper {
+    display: grid;
+    grid-template-columns: 162px 162px 299px;
+    grid-column-gap: 42px;
+  }
+
+  .example__expenses {
+    grid-column: 3 / 4;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__wrapper {
+    display: grid;
+    grid-template-columns: 436px 560px;
+    grid-column-gap: 224px;
+  }
+
+  .example__description {
+    grid-column: 1 / 2;
+  }
+
+  .example__block {
+    grid-column: 1 / 2;
+  }
+
+  .example__expenses {
+    grid-column: 1 / 2;
+  }
+
+  .example__cat-slider {
+    grid-column: 2 / 3;
+  }
 }

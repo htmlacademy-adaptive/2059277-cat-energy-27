@@ -1,9 +1,38 @@
 .main-header {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
   color: $black-color;
   background-color: $white-color;
 }
 
 .main-header__logo {
   width: 191px;
+  height: 38px;
   background-color: $white-color;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    display: flex;
+    flex-direction: row;
+    padding: 24px 30px;
+  }
+
+  .main-header__logo {
+    height: 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 53px 110px;
+  }
+
+  .main-header__logo {
+    height: 59px;
+  }
 }

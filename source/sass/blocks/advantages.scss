@@ -4,3 +4,24 @@
   line-height: 40px;
   font-weight: 400;
 }
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__list {
+    display: grid;
+    grid-template-columns: 247px 249px;
+    grid-column-gap: 137px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__list {
+    display: flex;
+    flex-direction: row;
+  }
+}
+

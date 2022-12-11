@@ -4,3 +4,10 @@
   line-height: 26px;
   font-weight: 400;
 }
+
+@media (min-width: $desktop-width) {
+  .owner-data__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}

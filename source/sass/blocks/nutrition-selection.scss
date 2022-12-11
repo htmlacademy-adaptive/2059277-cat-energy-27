@@ -1,3 +1,8 @@
+.nutrition-selection {
+  display: flex;
+  flex-direction: column;
+}
+
 .nutrition-selection__title {
   font-family: $main-font;
   font-size: 24px;
@@ -14,4 +19,12 @@
   color: $black-color;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+@media (min-width: $desktop-width) {
+  .nutrition-selection {
+    display: grid;
+    grid-template-columns: 570px 570px;
+    grid-column-gap: 80px;
+  }
 }

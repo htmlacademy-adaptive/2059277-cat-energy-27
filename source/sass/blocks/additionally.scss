@@ -4,3 +4,18 @@
   line-height: 26px;
   font-weight: 400;
 }
+
+@media (min-width: $tablet-width) {
+  .additionally__list {
+    display: grid;
+    grid-template-columns: 221px 190px;
+    grid-column-gap: 122px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additionally__list{
+    display: flex;
+  }
+}
+

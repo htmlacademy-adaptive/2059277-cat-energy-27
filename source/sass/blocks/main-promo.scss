@@ -1,17 +1,24 @@
 .main-promo {
+  position: relative;
+  width: 320px;
   color: $white-color;
+  z-index: 2;
 }
 
 .main-promo__wrapper {
   width: 320px;
-  height: 302px;
+  height: 480px;
+  background-image: url("../img/promo-image-mobile.png"), linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-background-index.jpg");
+  background-position: center bottom, center top, center top;
+  background-size: 280px 270px, 320px 302px, 320px 302px;
+  background-repeat: no-repeat;
+}
+
+.main-promo__wrapper-text {
+  width: 320px;
+  min-height: 302px;
   margin-bottom: 138px;
   padding-top: 27px;
-  background-color: $green-color;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-background-index.jpg");
-  background-position: center;
-  background-size: 100% auto, cover;
-  background-repeat: no-repeat;
 }
 
 .main-promo__slogan {
@@ -25,5 +32,82 @@
 
 .main-promo__button {
   width: 280px;
+  margin-left: 20px;
   padding: 7px 44px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-promo {
+    width: 768px;
+  }
+
+  .main-promo__wrapper {
+    width: 709px;
+    height: 810px;
+    background-image: url("../img/promo-image-tablet.png");
+    background-position: bottom;
+    background-size: 709px 609px;
+    background-repeat: no-repeat;
+  }
+
+  .main-promo__wrapper-text {
+    width: 420px;
+    min-height: 181px;
+    margin: 0;
+    margin-left: 117px;
+    padding: 0;
+    color: $black-color;
+    background-color: $white-color;
+    background-image: none;
+  }
+
+  .main-promo__title {
+    margin: 0;
+    margin-bottom: 41px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: start;
+  }
+
+  .main-promo__slogan {
+    margin: 0;
+    margin-bottom: 49px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: start;
+  }
+
+  .main-promo__button {
+    width: 244px;
+    margin-left: 120px;
+    padding: 14px 26px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-promo {
+    width: 1440px;
+  }
+
+  .main-promo__wrapper {
+    width: 1440px;
+    height: 696px;
+    background-image: url("../img/promo-image-desktop.png"), linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-background-index.jpg");
+    background-position: center bottom, top right, top right;
+    background-size: 552px 499px, 720px 694px, 720px 694px;
+    background-repeat: no-repeat;
+  }
+
+  .main-promo__wrapper-text {
+    width: 420px;
+    min-height: 181px;
+    margin: 0;
+    margin-left: 117px;
+    padding: 0;
+    color: $black-color;
+    background-color: $white-color;
+    background-image: none;
+  }
 }

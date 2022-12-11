@@ -13,3 +13,18 @@
   color: $black-color;
   background-color: $white-color;
 }
+
+@media (min-width: $tablet-width) {
+  .page__body {
+    width: $tablet-width;
+    min-height: 100%;
+    margin: 0 auto;
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__body {
+    width: $desktop-width;
+  }
+}
