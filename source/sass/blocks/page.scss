@@ -3,7 +3,6 @@
 }
 
 .page__body {
-  width: 320px;
   min-height: 100%;
   margin: 0 auto;
   flex-grow: 1;
@@ -16,15 +15,8 @@
 
 @media (min-width: $tablet-width) {
   .page__body {
-    width: $tablet-width;
     min-height: 100%;
     margin: 0 auto;
     flex-grow: 1;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page__body {
-    width: $desktop-width;
   }
 }
