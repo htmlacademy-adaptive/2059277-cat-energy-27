@@ -1,17 +1,14 @@
-.main-footer {
-  color: $black-color;
-  background-color: $white-color;
-}
-
 .main-footer__wrapper {
-  display: flex;
-  flex-direction: column;
-}
+  padding: 0 20px;
+  text-align: center;
 
-@media (min-width: $tablet-width) {
-  .main-footer__wrapper {
+  @include tablet {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  @include desktop {
+    padding: 0 110px;
   }
 }

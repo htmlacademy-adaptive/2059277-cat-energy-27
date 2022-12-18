@@ -1,23 +1,15 @@
-.product-catalog {
-  color: $black-color;
-  background-color: $white-color;
-}
-
 .product-catalog__title {
   text-align: start;
 }
 
-@media (min-width: $tablet-width) {
-  .product-catalog__list {
+.product-catalog__list {
+  @include tablet {
     display: grid;
     grid-template-columns: 324px 324px;
     grid-column-gap: 60px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .product-catalog__list {
-    display: grid;
+  @include desktop {
     grid-template-columns: repeat(4, 245px);
     grid-column-gap: 80px;
   }

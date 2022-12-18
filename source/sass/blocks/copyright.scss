@@ -4,6 +4,8 @@
 }
 
 .copyright__logo {
+  display: flex;
+  justify-content: space-between;
   font-size: 16px;
   line-height: 19px;
   color: $silver-color;

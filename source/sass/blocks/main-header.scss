@@ -1,37 +1,30 @@
 .main-header {
-  display: flex;
-  flex-direction: column;
   padding: 10px 20px;
-  color: $black-color;
-}
 
-.main-header__logo {
-  width: 191px;
-  height: 38px;
-  background-color: $white-color;
-}
-
-@media (min-width: $tablet-width) {
-  .main-header {
+  @include tablet {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     padding: 24px 30px;
   }
 
-  .main-header__logo {
-    height: 52px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-header {
-    display: flex;
-    flex-direction: row;
+  @include desktop {
     justify-content: space-between;
     padding: 53px 110px;
   }
+}
 
-  .main-header__logo {
+.main-header__logo {
+  width: 192px;
+  height: 38px;
+  background-color: $white-color;
+
+  @include tablet {
+    width: 174px;
+    height: 52px;
+  }
+
+  @include desktop {
+    width: 202px;
     height: 59px;
   }
 }

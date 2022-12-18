@@ -1,6 +1,11 @@
 .program-selection {
-  color: $black-color;
-  background-color: $white-color;
+  @include tablet {
+    padding: 0 40px;
+  }
+
+  @include desktop {
+    padding: 0 50px;
+  }
 }
 
 .program-selection__title {
@@ -35,6 +40,12 @@
   @include reset-indents;
 }
 
+.program-selection__container {
+  @include tablet {
+    display: flex;
+  }
+}
+
 .program-selection__button {
   padding: 7px 44px;
 }
@@ -43,16 +54,4 @@
   font-size: 14px;
   line-height: 16px;
   text-align: center;
-}
-
-@media (min-width: $tablet-width) {
-  .program-selection {
-    padding: 0 40px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .program-selection {
-    padding: 0 50px;
-  }
 }

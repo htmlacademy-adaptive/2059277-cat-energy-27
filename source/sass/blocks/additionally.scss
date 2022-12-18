@@ -1,3 +1,7 @@
+.additionally {
+  border: none;
+}
+
 .additionally__title {
   font-family: $main-font;
   font-size: 24px;
@@ -5,16 +9,15 @@
   font-weight: 400;
 }
 
-@media (min-width: $tablet-width) {
-  .additionally__list {
+.additionally__list {
+  @include tablet {
     display: grid;
     grid-template-columns: 221px 190px;
     grid-column-gap: 122px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .additionally__list {
-    display: flex;
+  @include desktop {
+    grid-template-columns: repeat(4, 221px);
+    grid-column-gap: 104px;
   }
 }

@@ -1,6 +1,4 @@
 .catalog-promo {
-  width: 280px;
-  height: 290px;
   color: $white-color;
 }
 
@@ -12,6 +10,14 @@
   background-position: center;
   background-size: 100% auto, cover;
   background-repeat: no-repeat;
+
+  @include tablet {
+    padding: 71px 124px 69px 422px;
+  }
+
+  @include desktop {
+    padding: 185px 40px 43px;
+  }
 }
 
 .catalog-promo__text {
@@ -19,4 +25,9 @@
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+
+  @include tablet {
+    width: 161px;
+    text-align: start;
+  }
 }

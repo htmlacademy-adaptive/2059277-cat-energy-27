@@ -1,5 +1,15 @@
 .additional-products {
-  padding: 36px 0;
+  padding-top: 36px;
+
+  @include desktop {
+    display: grid;
+    grid-template-columns: 896px 246px;
+    grid-column-gap: 80px;
+  }
+}
+
+.additional-products__wrapper {
+  margin-bottom: 55px;
 }
 
 .additional-products__title {

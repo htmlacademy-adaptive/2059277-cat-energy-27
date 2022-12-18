@@ -1,23 +1,16 @@
 .main-nav {
-  width: 320px;
-}
-
-.main-nav__wrapper {
-  width: 320px;
-}
-
-@media (min-width: $tablet-width) {
-  .main-nav {
+  @include tablet {
     width: 440px;
+    padding-top: 18px;
   }
 
-  .main-nav__toggle {
-    display: none;
+  @include desktop {
+    width: 478px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .main-nav {
-    width: 478px;
+.main-nav__toggle {
+  @include tablet {
+    display: none;
   }
 }

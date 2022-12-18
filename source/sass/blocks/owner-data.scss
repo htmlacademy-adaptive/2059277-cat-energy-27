@@ -1,3 +1,7 @@
+.owner-data {
+  border: none;
+}
+
 .owner-data__title {
   font-family: $main-font;
   font-size: 24px;
@@ -5,8 +9,8 @@
   font-weight: 400;
 }
 
-@media (min-width: $desktop-width) {
-  .owner-data__list {
+.owner-data__list {
+  @include desktop {
     display: flex;
     justify-content: space-between;
   }

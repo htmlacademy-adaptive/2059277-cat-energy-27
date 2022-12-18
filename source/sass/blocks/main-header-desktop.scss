@@ -1,13 +1,13 @@
 .main-header-desktop {
   position: relative;
-}
 
-@media (min-width: $desktop-width) {
-  .main-header-desktop {
+  @include desktop {
     display: block;
   }
+}
 
-  .main-header-desktop::after {
+.main-header-desktop::after {
+  @include desktop {
     position: absolute;
     top: 0;
     right: 0;
