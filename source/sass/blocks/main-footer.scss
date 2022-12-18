@@ -1,14 +1,8 @@
 .main-footer__wrapper {
-  padding: 0 20px;
   text-align: center;
 
   @include tablet {
     display: flex;
     justify-content: space-between;
-    padding: 0 30px;
-  }
-
-  @include desktop {
-    padding: 0 110px;
   }
 }

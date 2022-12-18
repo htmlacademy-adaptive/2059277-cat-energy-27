@@ -1,15 +1,15 @@
 .main-header {
-  padding: 10px 20px;
+  padding-top: 10px;
 
   @include tablet {
     display: flex;
     justify-content: space-between;
-    padding: 24px 30px;
+    padding-top: 24px;
   }
 
   @include desktop {
     justify-content: space-between;
-    padding: 53px 110px;
+    padding-top: 53px;
   }
 }
 
