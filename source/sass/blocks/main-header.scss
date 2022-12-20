@@ -1,9 +1,30 @@
 .main-header {
-  color: $black-color;
-  background-color: $white-color;
+  padding-top: 10px;
+
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+  }
+
+  @include desktop {
+    justify-content: space-between;
+    padding-top: 53px;
+  }
 }
 
 .main-header__logo {
-  width: 191px;
+  width: 192px;
+  height: 38px;
   background-color: $white-color;
+
+  @include tablet {
+    width: 174px;
+    height: 52px;
+  }
+
+  @include desktop {
+    width: 202px;
+    height: 59px;
+  }
 }

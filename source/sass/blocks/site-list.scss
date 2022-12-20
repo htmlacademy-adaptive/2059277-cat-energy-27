@@ -1,19 +1,46 @@
 .site-list {
-  min-width: 320px;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    width: 440px;
+  }
+
+  @include desktop {
+    width: 478px;
+  }
 }
 
 .site-list__item {
-  padding: 22px 70px;
+  padding: 22px 50px;
   font-family: $main-font;
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
   text-align: center;
+
+  @include tablet {
+    padding: 0;
+    font-family: $main-font;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+}
+
+.site-list__item:not(:last-child) {
+  @include tablet {
+    margin-right: 34px;
+  }
 }
 
 .site-list__link {
   color: $black-color;
-  background-color: $white-color;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.site-list__link--desktop {
+  @include desktop {
+    color: $white-color;
+  }
 }

@@ -1,6 +1,17 @@
-.contacts {
-  color: $black-color;
-  background-color: $white-color;
+.contacts__wrapper {
+  display: grid;
+  grid-template-columns: 139px 139px;
+
+  @include tablet {
+    grid-template-columns: 172px 160px;
+    grid-column-gap: 297px;
+  }
+
+  @include desktop {
+    width: 565px;
+    grid-template-columns: 163px 155px;
+    grid-column-gap: 87px;
+  }
 }
 
 .contacts__title {

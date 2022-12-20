@@ -1,6 +1,11 @@
 .program-selection {
-  color: $black-color;
-  background-color: $white-color;
+  @include tablet {
+    padding: 0 40px;
+  }
+
+  @include desktop {
+    padding: 0 50px;
+  }
 }
 
 .program-selection__title {
@@ -33,6 +38,12 @@
 
 .program-selection__additionally {
   @include reset-indents;
+}
+
+.program-selection__container {
+  @include tablet {
+    display: flex;
+  }
 }
 
 .program-selection__button {

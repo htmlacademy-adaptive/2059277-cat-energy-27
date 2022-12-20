@@ -1,3 +1,11 @@
+.nutrition-selection {
+  @include desktop {
+    display: grid;
+    grid-template-columns: 570px 570px;
+    grid-column-gap: 80px;
+  }
+}
+
 .nutrition-selection__title {
   font-family: $main-font;
   font-size: 24px;

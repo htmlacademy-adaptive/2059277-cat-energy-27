@@ -1,29 +1,134 @@
 .main-promo {
+  position: relative;
   color: $white-color;
+  z-index: 2;
 }
 
 .main-promo__wrapper {
-  width: 320px;
-  height: 302px;
+  position: relative;
+  width: 100%;
+
+  @include tablet {
+    width: 708px;
+    min-height: 810px;
+    margin: 0 auto;
+    padding: 0 30px;
+    background-image: none;
+  }
+
+  @include desktop {
+    width: 1220px;
+    min-height: 600px;
+    padding: 0 110px;
+    margin-bottom: 82px;
+    background-image: none;
+  }
+}
+
+.main-promo__wrapper::after {
+  position: absolute;
+  top: 182px;
+  right: 25px;
+  content: url("../img/promo-image-mobile.png");
+
+  @include tablet {
+    top: 265px;
+    left: 30px;
+    content: url("../img/promo-image-tablet.png");
+    z-index: 1;
+  }
+
+  @include desktop {
+    top: 30px;
+    left: 560px;
+    content: url("../img/promo-image-desktop.png");
+    z-index: 1;
+  }
+}
+
+.main-promo__text {
+  position: relative;
+  width: 100%;
+  min-height: 302px;
   margin-bottom: 138px;
   padding-top: 27px;
-  background-color: $green-color;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-background-index.jpg");
-  background-position: center;
-  background-size: 100% auto, cover;
+  background-position: top;
+  background-size: cover;
   background-repeat: no-repeat;
+
+  @include tablet {
+    width: 550px;
+    min-height: 0;
+    margin-bottom: 49px;
+    padding-top: 65px;
+    padding-left: 87px;
+    color: $black-color;
+    background-color: $white-color;
+    background-image: none;
+  }
+
+  @include desktop {
+    width: 420px;
+    margin-bottom: 52px;
+    padding-top: 111px;
+    padding-left: 80px;
+    color: $black-color;
+    background-color: $white-color;
+  }
+}
+
+.main-promo__title {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  padding: 0 20px;
+
+  @include tablet {
+    width: 450px;
+    margin: 0;
+    margin-bottom: 41px;
+    padding: 0;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: start;
+  }
 }
 
 .main-promo__slogan {
+  margin: 0;
   font-family: $main-font;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
+
+  @include tablet {
+    position: relative;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: start;
+    z-index: 2;
+  }
 }
 
 .main-promo__button {
+  position: relative;
   width: 280px;
+  margin: 0 auto;
   padding: 7px 44px;
+  z-index: 2;
+
+  @include tablet {
+    width: 244px;
+    margin-left: 87px;
+    padding: 14px 26px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @include desktop {
+    margin-left: 80px;
+  }
 }

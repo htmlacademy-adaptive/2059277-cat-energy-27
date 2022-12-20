@@ -4,3 +4,16 @@
   line-height: 40px;
   font-weight: 400;
 }
+
+.advantages__list {
+  @include tablet {
+    display: grid;
+    grid-template-columns: 247px 249px;
+    grid-column-gap: 137px;
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(4, 250px);
+    grid-column-gap: 77px;
+  }
+}

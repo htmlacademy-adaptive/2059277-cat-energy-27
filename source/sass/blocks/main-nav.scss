@@ -1,3 +1,16 @@
 .main-nav {
-  width: 320px;
+  @include tablet {
+    width: 440px;
+    padding-top: 18px;
+  }
+
+  @include desktop {
+    width: 478px;
+  }
+}
+
+.main-nav__toggle {
+  @include tablet {
+    display: none;
+  }
 }

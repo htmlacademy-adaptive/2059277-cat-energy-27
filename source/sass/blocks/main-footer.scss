@@ -1,4 +1,8 @@
-.main-footer {
-  color: $black-color;
-  background-color: $white-color;
+.main-footer__wrapper {
+  text-align: center;
+
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+  }
 }
