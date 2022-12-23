@@ -10,7 +10,7 @@
 
   @include tablet {
     width: 708px;
-    min-height: 810px;
+    min-height: 872px;
     margin: 0 auto;
     padding: 0 30px;
     background-image: none;
@@ -34,6 +34,8 @@
   @include tablet {
     top: 265px;
     left: 30px;
+    width: 709px;
+    height: 609px;
     content: url("../img/promo-image-tablet.png");
     z-index: 1;
   }
@@ -61,7 +63,7 @@
     width: 550px;
     min-height: 0;
     margin-bottom: 49px;
-    padding-top: 65px;
+    padding-top: 62px;
     padding-left: 87px;
     color: $black-color;
     background-color: $white-color;

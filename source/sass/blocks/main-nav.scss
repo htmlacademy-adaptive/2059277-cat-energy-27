@@ -1,16 +1,123 @@
 .main-nav {
+  position: relative;
+  width: 320px;
+  margin-left: -20px;
+
   @include tablet {
     width: 440px;
-    padding-top: 18px;
+    margin-top: 42px;
+    margin-left: 0;
   }
 
   @include desktop {
     width: 478px;
+    margin-top: 69px;
   }
 }
 
 .main-nav__toggle {
+  position: absolute;
+  top: -45px;
+  right: 20px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: $white-color;
+  cursor: pointer;
+  border: none;
+  z-index: 2;
+
   @include tablet {
     display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 2px;
+  background-color: $black-color;
+  box-shadow: 0 8px 0 0 $black-color, 0 16px 0 0 $black-color;
+  content: "";
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: $silver-color;
+  box-shadow:
+    0 8px 0 0 $silver-color,
+    0 16px 0 0 $silver-color;
+}
+
+.main-nav--closed .site-list__item {
+  @include mobile-only {
+    display: none;
+  }
+
+  @include tablet {
+    display: block;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  @include mobile-only {
+    top: -53px;
+    right: 20px;
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 15px;
+      right: 0;
+      width: 24px;
+      height: 2px;
+      background-color: $black-color;
+      content: "";
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:active::before,
+    &:active::after {
+      background-color: $silver-color;
+    }
+  }
+}
+
+.main-nav--opened .main-nav__wrapper {
+  @include mobile-only {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    background-color: $white-color;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  @include mobile-only {
+    display: none;
+  }
+}
+
+.main-nav--nojs .main-nav__wrapper {
+  @include mobile-only {
+    position: static;
+    min-height: 0;
+  }
+}
+
+.main-nav--nojs .site-list__item {
+  @include mobile-only {
+    display: block;
   }
 }

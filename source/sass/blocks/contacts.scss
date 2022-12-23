@@ -1,6 +1,7 @@
 .contacts__wrapper {
   display: grid;
   grid-template-columns: 139px 139px;
+  padding: 26px 0;
 
   @include tablet {
     grid-template-columns: 172px 160px;
@@ -15,6 +16,8 @@
 }
 
 .contacts__title {
+  margin-top: 0;
+  margin-bottom: 0;
   font-family: $main-font;
   font-size: 16px;
   line-height: 20px;
@@ -24,8 +27,14 @@
 }
 
 .contacts__description {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   color: $silver-color;
+}
+
+.contacts__map {
+  margin-bottom: 39px;
 }

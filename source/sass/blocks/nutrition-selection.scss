@@ -1,4 +1,6 @@
 .nutrition-selection {
+  margin-bottom: 20px;
+
   @include desktop {
     display: grid;
     grid-template-columns: 570px 570px;
@@ -6,7 +8,24 @@
   }
 }
 
+.nutrition-selection__wrapper {
+  margin-top: 20px;
+  padding-top: 30px;
+  padding-right: 33px;
+  padding-bottom: 18px;
+  padding-left: 20px;
+  background-color: $white-100-color;
+
+  @include tablet {
+    margin-top: 0;
+  }
+}
+
 .nutrition-selection__title {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 29px;
+  margin-left: 71px;
   font-family: $main-font;
   font-size: 24px;
   line-height: 37px;
@@ -14,7 +33,41 @@
   text-transform: uppercase;
 }
 
+.nutrition-selection__title--slim::before {
+  position: absolute;
+  top: -10px;
+  left: -69px;
+  width: 50px;
+  height: 53px;
+  background-image: url("../img/cat-slim.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.nutrition-selection__title--pro::before {
+  position: absolute;
+  top: -10px;
+  left: -78px;
+  width: 67px;
+  height: 50px;
+  background-image: url("../img/cat-pro.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.nutrition-selection__description {
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid $white-400-color;
+}
+
 .nutrition-selection__link {
+  position: relative;
   font-family: $main-font;
   font-size: 16px;
   line-height: 16px;
@@ -22,4 +75,17 @@
   color: $black-color;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.nutrition-selection__link::after {
+  position: absolute;
+  top: 6px;
+  right: -50px;
+  width: 32px;
+  height: 10px;
+  background-image: url("../img/icon-arrow.svg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  content: "";
 }

@@ -10,4 +10,21 @@
   line-height: 19px;
   color: $silver-color;
   text-decoration: none;
+
+  &:active {
+    fill: $green-color;
+    opacity: 0.3;
+  }
+}
+
+.copyright__logo-icon {
+  fill: $silver-100-color;
+
+  &:hover {
+    fill: $green-color;
+  }
+
+  &:active {
+    fill: $green-color;
+  }
 }

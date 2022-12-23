@@ -1,4 +1,10 @@
+.advantages {
+  margin-bottom: 49px;
+}
+
 .advantages__title {
+  margin-top: 0;
+  margin-bottom: 40px;
   font-family: $main-font;
   font-size: 36px;
   line-height: 40px;
@@ -6,6 +12,8 @@
 }
 
 .advantages__list {
+  padding-left: 80px;
+
   @include tablet {
     display: grid;
     grid-template-columns: 247px 249px;
@@ -16,4 +24,60 @@
     grid-template-columns: repeat(4, 250px);
     grid-column-gap: 77px;
   }
+}
+
+.advantages__item {
+  position: relative;
+}
+
+.advantages__item--consist::before {
+  position: absolute;
+  top: 0;
+  left: -80px;
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/leaf.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.advantages__item--consistence::before {
+  position: absolute;
+  top: 0;
+  left: -80px;
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/water.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.advantages__item--functionality::before {
+  position: absolute;
+  top: 0;
+  left: -80px;
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/cutlery.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.advantages__item--efficiency::before {
+  position: absolute;
+  top: 0;
+  left: -80px;
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/timer.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  content: "";
 }
