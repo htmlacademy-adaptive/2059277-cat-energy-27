@@ -1,5 +1,13 @@
 .example {
   background-color: $white-500-color;
+
+  @include tablet {
+    background: linear-gradient(to bottom, $white-color 60%, $white-500-color 40%);
+  }
+
+  @include desktop {
+    background: linear-gradient(to bottom, $white-color 50%, $white-100-color 50%);
+  }
 }
 
 .example__wrapper {
@@ -12,11 +20,15 @@
   @include tablet {
     grid-template-columns: 162px 162px 299px;
     grid-column-gap: 42px;
+    padding-top: 43px;
+    padding-bottom: 101px;
   }
 
   @include desktop {
     grid-template-columns: 436px 560px;
     grid-column-gap: 224px;
+    padding-top: 0;
+    padding-bottom: 75px;
   }
 }
 
@@ -28,12 +40,25 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+
+  @include tablet {
+    margin-bottom: 63px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .example__description {
   margin-top: 0;
   margin-bottom: 20px;
   grid-column: 1 / -1;
+  color: $silver-color;
+
+  @include tablet {
+    margin-bottom: 54px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 
   @include desktop {
     grid-column: 1 / 2;
@@ -47,6 +72,11 @@
   padding: 15px 20px 18px;
   border: 1px solid $white-600-color;
   text-align: center;
+
+  @include tablet {
+    margin-bottom: 99px;
+    padding: 15px 29px 20px;
+  }
 
   @include desktop {
     grid-column: 1 / 2;
@@ -63,6 +93,15 @@
   background-color: $white-500-color;
   text-align: center;
   text-transform: lowercase;
+
+  @include tablet {
+    top: 65px;
+    left: 13px;
+    width: 135px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $white-color;
+  }
 }
 
 .example__block-definition {
@@ -72,6 +111,11 @@
   line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
+
+  @include tablet {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__expenses {
@@ -87,6 +131,11 @@
 
   @include tablet {
     grid-column: 3 / 4;
+    margin-top: 11px;
+    margin-bottom: 0;
+    margin-left: 125px;
+    font-size: 20px;
+    text-align: right;
   }
 
   @include desktop {
@@ -102,6 +151,13 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  @include tablet {
+    width: 560px;
+    height: 512px;
+    margin: 0 auto;
+    background-image: url("../img/cat-slider-tablet.png");
+  }
 
   @include desktop {
     grid-column: 2 / 3;

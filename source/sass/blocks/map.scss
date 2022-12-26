@@ -3,7 +3,14 @@
 }
 
 .map__image {
+  width: 320px;
+  height: 362px;
   margin: 0 auto;
   border: none;
   display: block;
+
+  @include tablet {
+    width: 768px;
+    height: 400px;
+  }
 }

@@ -15,6 +15,10 @@
     fill: $green-color;
     opacity: 0.3;
   }
+
+  @include tablet {
+    width: 163px;
+  }
 }
 
 .copyright__logo-icon {

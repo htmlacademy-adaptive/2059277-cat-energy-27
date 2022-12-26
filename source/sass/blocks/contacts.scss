@@ -6,6 +6,8 @@
   @include tablet {
     grid-template-columns: 172px 160px;
     grid-column-gap: 297px;
+    width: 628px;
+    padding: 56px 70px;
   }
 
   @include desktop {
@@ -24,6 +26,11 @@
   font-weight: 400;
   color: $silver-400-color;
   text-transform: uppercase;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .contacts__description {
@@ -33,6 +40,11 @@
   line-height: 20px;
   font-weight: 400;
   color: $silver-color;
+
+  @include tablet {
+    font-size: 16px;
+    text-align: right;
+  }
 }
 
 .contacts__map {
