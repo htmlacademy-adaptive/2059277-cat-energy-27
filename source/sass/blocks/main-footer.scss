@@ -1,3 +1,16 @@
+.main-footer {
+  padding: 40px 0;
+  background-color: $white-100-color;
+
+  @include tablet {
+    padding: 55px 0;
+  }
+
+  @include desktop {
+    padding: 66px 0;
+  }
+}
+
 .main-footer__wrapper {
   text-align: center;
 

@@ -55,8 +55,8 @@
 .advantages__item:nth-child(1) {
   @include tablet {
     background-image: url("../img/number-one.png");
-    background-position: 50% 50%;
-    background-size: 30%;
+    background-position: 70% 70%;
+    background-size: 28%;
     background-repeat: no-repeat;
   }
 }
@@ -64,8 +64,8 @@
 .advantages__item:nth-child(2) {
   @include tablet {
     background-image: url("../img/number-two.png");
-    background-position: 50% 50%;
-    background-size: 40%;
+    background-position: 95% 70%;
+    background-size: 45%;
     background-repeat: no-repeat;
   }
 }
@@ -73,8 +73,8 @@
 .advantages__item:nth-child(3) {
   @include tablet {
     background-image: url("../img/number-three.png");
-    background-position: 50% 50%;
-    background-size: 30%;
+    background-position: 95% 70%;
+    background-size: 45%;
     background-repeat: no-repeat;
   }
 }
@@ -82,8 +82,8 @@
 .advantages__item:nth-child(4) {
   @include tablet {
     background-image: url("../img/number-four.png");
-    background-position: 50% 50%;
-    background-size: 30%;
+    background-position: 95% 80%;
+    background-size: 48%;
     background-repeat: no-repeat;
   }
 }
@@ -171,6 +171,7 @@
 .advantages__description {
   margin-top: 0;
   margin-bottom: 0;
+  color: $silver-color;
 
   @include tablet {
     font-size: 16px;
