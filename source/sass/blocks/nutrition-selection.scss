@@ -160,6 +160,10 @@
   text-decoration: none;
   text-transform: uppercase;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @include tablet {
     margin-left: 52px;
     font-size: 20px;

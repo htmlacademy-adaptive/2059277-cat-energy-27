@@ -1,3 +1,7 @@
+.contacts {
+  position: relative;
+}
+
 .contacts__wrapper {
   display: grid;
   grid-template-columns: 139px 139px;
@@ -11,9 +15,15 @@
   }
 
   @include desktop {
-    width: 565px;
-    grid-template-columns: 163px 155px;
+    position: absolute;
+    top: 95px;
+    right: 765px;
+    width: 425px;
+    padding: 56px 60px 56px 80px;
+    grid-template-columns: 163px 175px;
     grid-column-gap: 87px;
+    background-color: $white-color;
+    z-index: 2;
   }
 }
 

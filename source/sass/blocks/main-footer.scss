@@ -20,11 +20,21 @@
   }
 }
 
+.main-footer__logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .main-footer__social {
   margin-top: 32px;
-  margin-left: 74px;
   padding-top: 20px;
   padding-bottom: 21px;
+  padding-left: 74px;
   border-top: 1px solid $white-400-color;
   border-bottom: 1px solid $white-400-color;
 

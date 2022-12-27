@@ -1,6 +1,4 @@
 .site-list {
-  width: 100%;
-
   @include tablet {
     display: flex;
     flex-wrap: wrap;
@@ -17,7 +15,6 @@
   text-align: center;
 
   @include tablet {
-    font-family: $main-font;
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
