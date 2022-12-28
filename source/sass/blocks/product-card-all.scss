@@ -1,4 +1,7 @@
 .product-card-all {
+  padding: 25px 0;
+  border-top: 1px solid $white-550-color;
+  border-bottom: 1px solid $white-550-color;
   text-align: center;
 }
 
@@ -8,6 +11,8 @@
 }
 
 .product-card-all__title {
+  margin-top: 53px;
+  margin-bottom: 8px;
   font-family: $main-font;
   font-size: 16px;
   line-height: 20px;
@@ -22,5 +27,6 @@
 }
 
 .product-card-all__button {
+  margin-top: 21px;
   padding: 10px 94px;
 }

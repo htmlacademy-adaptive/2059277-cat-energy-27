@@ -1,12 +1,19 @@
 .complement__title {
+  margin-top: 0;
+  margin-bottom: 13px;
   font-family: $main-font;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
   color: $silver-200-color;
+  text-transform: uppercase;
 }
 
 .complement__options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 15px;
   font-size: 14px;
   line-height: 14px;
   color: $silver-color;

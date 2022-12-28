@@ -4,7 +4,7 @@
 
 .catalog-promo__wrapper {
   margin-bottom: 35px;
-  padding: 187px 60px 43px;
+  padding: 187px 0 43px 0;
   background-color: $green-color;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-background-catalog.jpg");
   background-position: center;
@@ -21,7 +21,11 @@
 }
 
 .catalog-promo__text {
-  margin: 0;
+  position: relative;
+  width: 161px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 58px;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -31,3 +35,17 @@
     text-align: start;
   }
 }
+
+.catalog-promo__text::before {
+  position: absolute;
+  top: -128px;
+  left: 43px;
+  width: 78px;
+  height: 80px;
+  background-image: url("../img/icon-gift.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  content: "";
+}
+
