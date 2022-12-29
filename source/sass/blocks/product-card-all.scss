@@ -3,6 +3,11 @@
   border-top: 1px solid $white-550-color;
   border-bottom: 1px solid $white-550-color;
   text-align: center;
+
+  @include tablet {
+    padding: 38px 0;
+    border: none;
+  }
 }
 
 .product-card-all__link-title {
@@ -18,15 +23,35 @@
   line-height: 20px;
   font-weight: 400;
   color: $silver-200-color;
+
+  @include tablet {
+    width: 134px;
+    margin-top: 205px;
+    margin-bottom: 23px;
+    margin-left: 96px;
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .product-card-all__description {
   font-size: 12px;
   line-height: 16px;
   color: $silver-color;
+
+  @include tablet {
+    width: 165px;
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .product-card-all__button {
   margin-top: 21px;
   padding: 10px 94px;
+
+  @include tablet {
+    margin-top: 87px;
+    padding: 10px 79px;
+  }
 }

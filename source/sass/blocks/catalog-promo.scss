@@ -12,7 +12,9 @@
   background-repeat: no-repeat;
 
   @include tablet {
-    padding: 71px 124px 69px 422px;
+    margin-bottom: 76px;
+    padding: 71px 0 69px 0;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-background-catalog-tablet.jpg");
   }
 
   @include desktop {
@@ -32,6 +34,7 @@
 
   @include tablet {
     width: 161px;
+    margin-left: 422px;
     text-align: start;
   }
 }
@@ -47,5 +50,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   content: "";
+
+  @include tablet {
+    top: -10px;
+    left: -345px;
+    width: 80px;
+    height: 83px;
+  }
 }
 
