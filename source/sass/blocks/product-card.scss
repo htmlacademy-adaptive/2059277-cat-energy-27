@@ -81,7 +81,7 @@
   }
 
   @include desktop {
-    margin-left: 0;
+    margin-left: 20px;
   }
 }
 
@@ -109,5 +109,9 @@
   @include tablet {
     grid-row: 4 / 5;
     padding: 10px 93px;
+  }
+
+  @include desktop {
+    padding: 10px 53px;
   }
 }
