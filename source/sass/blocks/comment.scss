@@ -18,6 +18,8 @@
 
 .comment__field {
   width: 253px;
+  margin-top: 0;
+  margin-bottom: 0;
   padding: 10px 12px 126px 15px;
   font-family: $main-font;
   font-size: 16px;
@@ -31,5 +33,11 @@
   @include tablet {
     width: 630px;
     padding: 10px 19px 134px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @include desktop {
+    width: 1182px;
   }
 }

@@ -1,4 +1,4 @@
-.pet-item {
+.pet-item:not(:last-child) {
   padding-bottom: 14px;
 
   @include tablet {
@@ -12,12 +12,13 @@
 }
 
 .pet-item__input {
+  margin: 0;
   padding-top: 14px;
   padding-bottom: 13px;
   padding-left: 20px;
 
   @include tablet {
-    padding-top: 11px;
-    padding-bottom: 11px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }

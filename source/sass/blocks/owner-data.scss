@@ -18,7 +18,8 @@
 
 .owner-data__list {
   @include desktop {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 569px 572px;
+    column-gap: 78px;
   }
 }

@@ -4,6 +4,10 @@
   @include tablet {
     padding-bottom: 18px;
   }
+
+  @include desktop {
+    padding-bottom: 13px;
+  }
 }
 
 .choice__label-input {
@@ -17,4 +21,9 @@
   font-weight: 400;
   color: $silver-200-color;
   text-transform: uppercase;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
