@@ -1,7 +1,24 @@
-.owner-item {
+.owner-item:not(:last-child) {
   padding-bottom: 14px;
+
+  @include tablet {
+    padding-bottom: 20px;
+  }
 }
 
 .owner-item__label {
+  margin-top: 14px;
   margin-right: 10px;
+}
+
+.owner-item__input {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 15px;
+
+  @include tablet {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 20px;
+  }
 }

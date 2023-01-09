@@ -3,17 +3,33 @@
 }
 
 .comment__title {
+  margin-bottom: 38px;
   font-family: $main-font;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
+
+  @include tablet {
+    margin-bottom: 76px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .comment__field {
+  width: 253px;
+  padding: 10px 12px 126px 15px;
   font-family: $main-font;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   color: $silver-color;
   text-transform: uppercase;
+  border: 1px solid $white-200-color;
+  resize: none;
+
+  @include tablet {
+    width: 630px;
+    padding: 10px 19px 134px;
+  }
 }

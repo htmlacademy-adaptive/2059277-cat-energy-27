@@ -1,7 +1,23 @@
 .pet-item {
   padding-bottom: 14px;
+
+  @include tablet {
+    padding-bottom: 20px;
+  }
 }
 
 .pet-item__label {
+  margin-top: 14px;
   margin-right: 13px;
+}
+
+.pet-item__input {
+  padding-top: 14px;
+  padding-bottom: 13px;
+  padding-left: 20px;
+
+  @include tablet {
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
 }

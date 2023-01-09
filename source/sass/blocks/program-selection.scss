@@ -1,56 +1,96 @@
-.program-selection {
-  @include tablet {
-    padding: 0 40px;
-  }
+.program-selection__wrapper {
+  padding-top: 27px;
+  border-top: 1px solid $white-600-color;
 
-  @include desktop {
-    padding: 0 50px;
+  @include tablet {
+    width: 630px;
+    padding-top: 65px;
+    padding-right: 67px;
+    padding-left: 70px;
+    border: none;
   }
 }
 
 .program-selection__title {
+  margin-bottom: 37px;
   text-align: start;
+
+  @include tablet {
+    margin-bottom: 54px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .program-selection__discription {
+  margin-top: 0;
+  margin-bottom: 39px;
   font-family: $main-font;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
+
+  @include tablet {
+    margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .program-selection__pet-data {
   @include reset-indents;
+  margin-bottom: 22px;
+
+  @include tablet {
+    margin-bottom: 52px;
+  }
 }
 
 .program-selection__target {
   @include reset-indents;
+  margin-bottom: 26px;
+
+  @include tablet {
+    margin-bottom: 75px;
+  }
 }
 
 .program-selection__owner-data {
   @include reset-indents;
+  margin-bottom: 24px;
+
+  @include tablet {
+    margin-bottom: 65px;
+  }
 }
 
 .program-selection__comment {
   @include reset-indents;
+  margin-bottom: 23px;
 }
 
 .program-selection__additionally {
   @include reset-indents;
+  margin-bottom: 21px;
 }
 
 .program-selection__container {
+  margin-bottom: 32px;
+
   @include tablet {
     display: flex;
   }
 }
 
 .program-selection__button {
+  width: 280px;
+  margin-bottom: 21px;
   padding: 7px 44px;
 }
 
 .program-selection__legend {
+  margin-left: 64px;
   font-size: 14px;
   line-height: 16px;
   text-align: center;

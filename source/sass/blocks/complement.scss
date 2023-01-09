@@ -3,6 +3,11 @@
     display: grid;
     grid-template-columns: 407px 263px;
   }
+
+  @include desktop {
+    grid-template-columns: 285px 285px 244px;
+    column-gap: 40px;
+  }
 }
 
 .complement__title {
@@ -22,6 +27,13 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @include desktop {
+    grid-column: 1 / 2;
+    margin-top: 7px;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
 }
 
 .complement__options {
@@ -37,5 +49,11 @@
     grid-column: 2 / 3;
     font-size: 16px;
     line-height: 20px;
+  }
+
+  @include desktop {
+    grid-column: 2 / 3;
+    margin-top: 7px;
+    margin-bottom: 0;
   }
 }
