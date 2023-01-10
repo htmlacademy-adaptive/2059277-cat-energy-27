@@ -17,8 +17,30 @@
   padding-bottom: 13px;
   padding-left: 20px;
 
+  &:focus {
+    padding-top: 13px;
+    padding-bottom: 12px;
+    padding-left: 19px;
+  }
+
+  &:invalid {
+    padding-top: 13px;
+    padding-bottom: 12px;
+    padding-left: 19px;
+  }
+
   @include tablet {
     padding-top: 10px;
     padding-bottom: 10px;
+
+    &:focus {
+      padding-top: 9px;
+      padding-bottom: 9px;
+    }
+
+    &:invalid {
+      padding-top: 9px;
+      padding-bottom: 9px;
+    }
   }
 }

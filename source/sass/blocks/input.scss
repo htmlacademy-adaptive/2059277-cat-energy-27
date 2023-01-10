@@ -1,4 +1,5 @@
 .input {
+  position: relative;
   display: flex;
 }
 
@@ -31,9 +32,28 @@
     color: $silver-color;
   }
 
+  &:hover {
+    border: 1px solid $white-600-color;
+  }
+
+  &:focus {
+    border: 2px solid $silver-color;
+    outline: none;
+  }
+
+  &:invalid {
+    border: 2px solid $red-color;
+    outline: none;
+  }
+
   @include tablet {
     flex-grow: 30;
     font-size: 20px;
     line-height: 30px;
   }
 }
+
+.input__field:focus + .owner-item__input--email {
+  background-color: $green-color;
+}
+

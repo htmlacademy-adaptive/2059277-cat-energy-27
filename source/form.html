@@ -8,7 +8,7 @@
   </head>
   <body class="page__body">
     <header class="main-header container">
-      <a class="main-header__logo logo" href="#">
+      <a class="main-header__logo logo" href="index.html">
         <img class="logo__image" src="img/logo-mobile.svg" width="34" height="38" alt="Сайт «Cat Energy».">
         <img class="logo__text" src="img/logo-mobile-text.svg" width="101" height="18" alt="Cat Energy.">
       </a>
@@ -19,7 +19,7 @@
         <div class="main-nav__wrapper main-nav__wrapper--close">
           <ul class="main-nav__list site-list clear-list">
             <li class="site-list__item site-list__item--current-desktop">
-              <a class="site-list__link" href="#">
+              <a class="site-list__link" href="index.html">
                 Главная
               </a>
             </li>
@@ -29,7 +29,7 @@
               </a>
             </li>
             <li class="site-list__item site-list__item--current">
-              <a class="site-list__link" href="form.html">
+              <a class="site-list__link" href="#">
                 Подбор программы
               </a>
             </li>
@@ -52,19 +52,19 @@
                   <li class="pet-data__item pet-item">
                     <div class="input">
                       <label class="pet-item__label input__label" for="pet-data-name">Имя:*</label>
-                      <input class="pet-item__input input__field" type="text" placeholder="Барсик" name="pet-data-name" required id="pet-data-name">
+                      <input class="pet-item__input input__field" type="text" value="Барсик" placeholder="Барсик" name="pet-data-name" required id="pet-data-name">
                     </div>
                   </li>
                   <li class="pet-data__item pet-item">
                     <div class="input">
                       <label class="pet-item__label input__label" for="pet-data-weight">Вес (кг):*</label>
-                      <input class="pet-item__input input__field" type="text" placeholder="7" name="pet-data-weight" required id="pet-data-weight">
+                      <input class="pet-item__input input__field" type="text" value="7" placeholder="7" name="pet-data-weight" required id="pet-data-weight">
                     </div>
                   </li>
                   <li class="pet-data__item pet-item">
                     <div class="input">
                       <label class="pet-item__label input__label" for="pet-data-age">Возраст (лет):</label>
-                      <input class="pet-item__input input__field" type="text" placeholder="7" name="pet-data-age" id="pet-data-age">
+                      <input class="pet-item__input input__field" type="text" value="7" placeholder="7" name="pet-data-age" id="pet-data-age">
                     </div>
                   </li>
                 </ul>
@@ -83,12 +83,14 @@
                   <li class="program-target__item choice choice--radio">
                     <label class="choice__label">
                       <input class="choice__label-input" type="radio" name="type-target" value="pro">
+                      <span class="choice__label-input-mark"></span>
                       <span class="choice__label-name">Набор массы</span>
                     </label>
                   </li>
                   <li class="program-target__item choice choice--radio">
                     <label class="choice__label">
                       <input class="choice__label-input" type="radio" name="type-target" value="unknown">
+                      <span class="choice__label-input-mark"></span>
                       <span class="choice__label-name">Не знаю (Нужен ваш совет)</span>
                     </label>
                   </li>
@@ -102,13 +104,20 @@
                 <li class="owner-data__item owner-item">
                   <div class="input">
                     <label class="owner-item__label input__label" for="owner-data-email">E-mail:*</label>
-                    <input class="owner-item__input owner-item__input--email input__field" type="email" placeholder="kuklachev@gmail.com" name="owner-data-email" required id="owner-data-email">
+                    <input class="owner-item__input input__field" type="email" value="kuklachev@gmail.com" placeholder="kuklachev@gmail.com" name="owner-data-email" required id="owner-data-email">
+                    <svg class="owner-item__input--email" width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <line x1="0.65" y1="6" x2="0.65" y2="14" stroke="#222222" stroke-width="1.3"/>
+                      <line x1="17.65" y1="6" x2="17.65" y2="14" stroke="#222222" stroke-width="1.3"/>
+                      <line y1="13.35" x2="18" y2="13.35" stroke="#222222" stroke-width="1.3"/>
+                      <line y1="1.35" x2="18" y2="1.35" stroke="#222222" stroke-width="1.3"/>
+                      <path d="M17.35 3.1821L9.00002 9.67654L0.65 3.18209V1.65H3.5L9.00002 1.65H14H17.35V3.1821Z" stroke="#222222" stroke-width="1.3"/>
+                    </svg>
                   </div>
                 </li>
                 <li class="owner-data__item owner-item">
                   <div class="input">
                     <label class="owner-item__label input__label" for="owner-data-tel">Телефон:*</label>
-                    <input class="owner-item__input owner-item__input--tel input__field" type="tel" placeholder="8 (960) 900-60-90" name="owner-data-tel" required id="owner-data-tel">
+                    <input class="owner-item__input owner-item__input--tel input__field" type="tel" value="8 (960) 900-60-90" placeholder="8 (960) 900-60-90" name="owner-data-tel" required id="owner-data-tel">
                   </div>
                 </li>
               </ul>
@@ -128,24 +137,28 @@
                 <li class="additionally__item choice choice--check">
                   <label class="choice__label">
                     <input class="choice__label-input" type="checkbox" name="type-additionally" value="sweetener" checked>
+                    <span class="choice__label-input-mark"></span>
                     <span class="choice__label-name">Сахарозаменитель</span>
                   </label>
                 </li>
                 <li class="additionally__item choice choice--check">
                   <label class="choice__label">
                     <input class="choice__label-input" type="checkbox" name="type-additionally" value="water">
+                    <span class="choice__label-input-mark"></span>
                     <span class="choice__label-name">Питьевая вода</span>
                   </label>
                 </li>
                 <li class="additionally__item choice choice--check">
                   <label class="choice__label">
                     <input class="choice__label-input" type="checkbox" name="type-additionally" value="milk">
+                    <span class="choice__label-input-mark"></span>
                     <span class="choice__label-name">Молоко</span>
                   </label>
                 </li>
                 <li class="additionally__item choice choice--check">
                   <label class="choice__label">
                     <input class="choice__label-input" type="checkbox" name="type-additionally" value="vitamins">
+                    <span class="choice__label-input-mark"></span>
                     <span class="choice__label-name">Витамины</span>
                   </label>
                 </li>

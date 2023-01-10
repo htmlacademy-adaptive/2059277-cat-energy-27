@@ -16,13 +16,47 @@
 }
 
 .owner-item__input {
+  position: relative;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 15px;
+
+  &:focus {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 13px;
+  }
+
+  &:invalid {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 13px;
+  }
 
   @include tablet {
     padding-top: 11px;
     padding-bottom: 11px;
     padding-left: 20px;
+
+    &:focus {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 19px;
+    }
+
+    &:invalid {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 19px;
+    }
   }
+}
+
+.owner-item__input--email {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 17px;
+  height: 13px;
+  content: "";
 }
