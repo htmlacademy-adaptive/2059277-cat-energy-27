@@ -3,6 +3,7 @@
 }
 
 .pet-data__list {
+  padding-bottom: 24px;
   border-bottom: 1px solid $white-400-color;
 
   @include tablet {

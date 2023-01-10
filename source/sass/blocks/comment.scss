@@ -3,6 +3,7 @@
 }
 
 .comment__title {
+  position: relative;
   margin-bottom: 38px;
   font-family: $main-font;
   font-size: 24px;
@@ -15,6 +16,38 @@
     line-height: 36px;
   }
 }
+
+.comment__title::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 143px;
+  display: block;
+  width: 200vh;
+  height: 2px;
+  background-color: $green-color;
+  z-index: 1;
+
+  @include tablet {
+    top: 23px;
+    left: 220px;
+  }
+}
+
+.comment__title::after {
+  @include tablet {
+    content: "";
+    position: absolute;
+    top: 23px;
+    right: 215px;
+    display: block;
+    width: 100vh;
+    height: 2px;
+    background-color: $green-color;
+    z-index: -1;
+  }
+}
+
 
 .comment__field {
   width: 253px;

@@ -10,11 +10,63 @@
   }
 }
 
+.choice__label {
+  position: relative;
+  display: block;
+}
+
 .choice__label-input {
-  margin-right: 15px;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.choice__label-input[type="checkbox"]:checked + .choice__label-input-mark::after {
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  width: 13px;
+  height: 10px;
+  margin: -1px;
+  background-color: $white-color;
+  background-image: url("../img/check-mark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+}
+
+.choice__label-input[type="radio"] + .choice__label-input-mark {
+  border-radius: 50%;
+  border: 1px solid $white-400-color;
+}
+
+.choice__label-input[type="radio"]:checked + .choice__label-input-mark::before {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 13px;
+  height: 13px;
+  background-color: $green-color;
+  border-radius: 50%;
+  content: "";
+}
+
+.choice__label-input-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-color: $white-color;
 }
 
 .choice__label-name {
+  margin-left: 45px;
   font-family: $main-font;
   font-size: 16px;
   line-height: 18px;

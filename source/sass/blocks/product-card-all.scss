@@ -2,14 +2,20 @@
   padding: 25px 0;
   border-top: 1px solid $white-550-color;
   border-bottom: 1px solid $white-550-color;
+  background-image: url("../img/icon-plus.svg");
+  background-position: center 15%;
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
   text-align: center;
 
   @include tablet {
+    margin-top: 102px;
+    margin-bottom: 60px;
     padding: 0 38px;
     padding-bottom: 38px;
     border: 2px solid $white-100-color;
     background-image: url("../img/icon-plus.svg");
-    background-position: center 25%;
+    background-position: center 15%;
     background-size: 60px 60px;
     background-repeat: no-repeat;
   }
@@ -31,7 +37,7 @@
 
   @include tablet {
     width: 134px;
-    margin-top: 205px;
+    margin-top: 138px;
     margin-bottom: 23px;
     margin-left: 58px;
     font-size: 20px;
@@ -60,8 +66,8 @@
 
   @include tablet {
     width: 249px;
-    margin-top: 107px;
-    padding: 10px 79px;
+    margin-top: 78px;
+    padding: 12px 79px;
     font-size: 16px;
   }
 
