@@ -54,6 +54,17 @@
 }
 
 .input__field:focus + .owner-item__input--email {
-  background-color: $green-color;
+  stroke: $green-color;
 }
 
+.input__field:invalid + .owner-item__input--email {
+  stroke: $red-color;
+}
+
+.input__field:focus + .owner-item__input--tel {
+  stroke: $green-color;
+}
+
+.input__field:invalid + .owner-item__input--tel {
+  stroke: $red-color;
+}

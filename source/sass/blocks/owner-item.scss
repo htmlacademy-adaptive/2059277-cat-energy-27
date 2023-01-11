@@ -22,15 +22,15 @@
   padding-left: 15px;
 
   &:focus {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 13px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 14px;
   }
 
   &:invalid {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 13px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 14px;
   }
 
   @include tablet {
@@ -54,9 +54,30 @@
 
 .owner-item__input--email {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 17px;
+  right: 10px;
   width: 17px;
   height: 13px;
+  stroke: $silver-200-color;
   content: "";
+
+  @include tablet {
+    top: 20px;
+    right: 20px;
+  }
+}
+
+.owner-item__input--tel {
+  position: absolute;
+  top: 17px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  stroke: $silver-200-color;
+  content: "";
+
+  @include tablet {
+    top: 20px;
+    right: 20px;
+  }
 }
