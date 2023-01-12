@@ -1,13 +1,13 @@
 .main-footer {
-  padding: 40px 0;
+  padding-top: 40px;
   background-color: $white-100-color;
 
   @include tablet {
-    padding: 55px 0;
+    padding-top: 57px;
   }
 
   @include desktop {
-    padding: 66px 0;
+    padding-top: 66px;
   }
 }
 
@@ -28,21 +28,26 @@
   &:active {
     opacity: 0.6;
   }
+
+  @include tablet {
+    margin-top: 5px;
+  }
 }
 
 .main-footer__social {
-  margin-top: 32px;
-  padding-top: 20px;
-  padding-bottom: 21px;
-  padding-left: 74px;
+  margin-top: 15px;
+  padding-top: 23px;
+  padding-bottom: 15px;
+  padding-left: 73px;
   border-top: 1px solid $white-400-color;
   border-bottom: 1px solid $white-400-color;
 
   @include tablet {
     margin-top: 0;
     margin-left: 0;
-    padding-top: 0;
+    padding-top: 9px;
     padding-bottom: 0;
+    padding-left: 34px;
     border: none;
   }
 }

@@ -9,7 +9,7 @@
   @include desktop {
     display: flex;
     justify-content: center;
-    padding-top: 12px;
+    padding-top: 20px;
   }
 }
 
@@ -17,7 +17,7 @@
   @include tablet {
     content: "";
     position: absolute;
-    top: 30px;
+    top: 43px;
     left: 0;
     display: block;
     width: 1000vh;
@@ -60,6 +60,9 @@
 
   @include desktop {
     margin-bottom: 81px;
+    margin-left: -36px;
+    padding-right: 36px;
+    padding-left: 37px;
   }
 }
 
@@ -72,6 +75,7 @@
   @include desktop {
     width: 896px;
     padding-bottom: 0;
+    padding-left: 2px;
     border: none;
   }
 }
@@ -88,7 +92,7 @@
 
   @include desktop {
     margin-bottom: 17px;
-    padding-top: 15px;
+    padding-top: 14px;
   }
 }
 
@@ -127,7 +131,7 @@
 
   @include desktop {
     grid-column: 3 / 4;
-    margin-left: 0;
+    margin-left: 1px;
     padding: 10px 26px;
     line-height: 20px;
   }
