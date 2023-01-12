@@ -1,13 +1,13 @@
 .main-footer {
-  padding-top: 40px;
+  padding: 40px 0;
   background-color: $white-100-color;
 
   @include tablet {
-    padding-top: 57px;
+    padding: 55px 0;
   }
 
   @include desktop {
-    padding-top: 66px;
+    padding: 66px 0;
   }
 }
 
@@ -54,10 +54,8 @@
 
 .main-footer__copyright {
   margin-top: 22px;
-  margin-bottom: 22px;
 
   @include tablet {
     margin-top: 0;
-    margin-bottom: 0;
   }
 }
