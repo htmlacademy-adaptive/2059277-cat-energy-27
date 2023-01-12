@@ -1,16 +1,124 @@
-.choice {
-  padding-bottom: 13px;
+.choice:not(:last-child) {
+  padding-bottom: 19px;
+
+  @include tablet {
+    padding-bottom: 18px;
+  }
+
+  @include desktop {
+    padding-bottom: 13px;
+  }
+}
+
+.choice__label {
+  position: relative;
+  display: block;
 }
 
 .choice__label-input {
-  margin-right: 15px;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.choice__label-input:hover + .choice__label-input-mark {
+  border: 1px solid $white-450-color;
+}
+
+.choice__label-input:disabled + .choice__label-input-mark + .choice__label-name {
+  opacity: 0.3;
+}
+
+.choice__label-input-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-color: $white-color;
+  border: 1px solid $white-600-color;
+
+  @include tablet {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.choice__label-input[type="checkbox"]:checked + .choice__label-input-mark::after {
+  position: absolute;
+  top: 8px;
+  left: 6px;
+  width: 18px;
+  height: 14px;
+  background-color: $white-color;
+  background-image: url("../img/check-mark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+
+  @include tablet {
+    top: 11px;
+    left: 8px;
+    width: 24px;
+    height: 19px;
+    background-image: url("../img/check-mark-tablet.svg");
+  }
+}
+
+.choice__label-input[type="checkbox"]:disabled + .choice__label-input-mark::after {
+  opacity: 0.3;
+}
+
+.choice__label-input[type="radio"] + .choice__label-input-mark {
+  border-radius: 50%;
+  border: 1px solid $white-400-color;
+}
+
+.choice__label-input[type="radio"]:hover + .choice__label-input-mark {
+  border: 1px solid $white-450-color;
+}
+
+.choice__label-input[type="radio"]:checked + .choice__label-input-mark::before {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 13px;
+  height: 13px;
+  background-color: $green-color;
+  border-radius: 50%;
+  content: "";
+
+  @include tablet {
+    top: 11px;
+    left: 11px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.choice__label-input[type="radio"]:disabled + .choice__label-input-mark::before {
+  opacity: 0.3;
 }
 
 .choice__label-name {
+  display: block;
+  padding-top: 6px;
+  margin-left: 45px;
   font-family: $main-font;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   color: $silver-200-color;
   text-transform: uppercase;
+
+  @include tablet {
+    margin-left: 60px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

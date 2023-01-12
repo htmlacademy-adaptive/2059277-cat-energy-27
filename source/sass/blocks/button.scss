@@ -13,8 +13,26 @@
   text-transform: uppercase;
   text-decoration: none;
 
+  &:hover {
+    background-color: $green-100-color;
+  }
+
+  &:active {
+    background-color: $green-100-color;
+    color: $white-700-color;
+  }
+
   &--silver {
     color: $silver-color;
     background-color: $white-100-color;
+
+    &:hover {
+      background-color: $white-550-color;
+    }
+
+    &:active {
+      background-color: $white-550-color;
+      color: $silver-50-color;
+    }
   }
 }

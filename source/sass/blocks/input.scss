@@ -1,13 +1,25 @@
+.input {
+  position: relative;
+  display: flex;
+}
+
 .input__label {
+  flex-grow: 1;
   font-family: $main-font;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   color: $silver-color;
   text-transform: uppercase;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .input__field {
+  flex-grow: 3;
   font-family: $main-font;
   font-size: 16px;
   line-height: 18px;
@@ -19,4 +31,40 @@
   &::placeholder {
     color: $silver-color;
   }
+
+  &:hover {
+    border: 1px solid $white-600-color;
+  }
+
+  &:focus {
+    border: 2px solid $silver-color;
+    outline: none;
+  }
+
+  &:invalid {
+    border: 2px solid $red-color;
+    outline: none;
+  }
+
+  @include tablet {
+    flex-grow: 30;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.input__field:focus + .owner-item__input--email {
+  stroke: $green-color;
+}
+
+.input__field:invalid + .owner-item__input--email {
+  stroke: $red-color;
+}
+
+.input__field:focus + .owner-item__input--tel {
+  stroke: $green-color;
+}
+
+.input__field:invalid + .owner-item__input--tel {
+  stroke: $red-color;
 }

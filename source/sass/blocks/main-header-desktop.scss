@@ -1,9 +1,10 @@
 .main-header-desktop {
   position: relative;
-  height: 696px;
 
   @include desktop {
     display: block;
+    height: 694px;
+    margin-bottom: 82px;
   }
 }
 

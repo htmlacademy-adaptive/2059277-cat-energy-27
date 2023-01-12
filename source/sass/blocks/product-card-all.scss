@@ -1,5 +1,24 @@
 .product-card-all {
+  padding: 25px 0;
+  border-top: 1px solid $white-550-color;
+  border-bottom: 1px solid $white-550-color;
+  background-image: url("../img/icon-plus.svg");
+  background-position: center 15%;
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
   text-align: center;
+
+  @include tablet {
+    margin-top: 102px;
+    margin-bottom: 60px;
+    padding: 0 38px;
+    padding-bottom: 38px;
+    border: 2px solid $white-100-color;
+    background-image: url("../img/icon-plus.svg");
+    background-position: center 15%;
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+  }
 }
 
 .product-card-all__link-title {
@@ -8,19 +27,53 @@
 }
 
 .product-card-all__title {
+  margin-top: 53px;
+  margin-bottom: 8px;
   font-family: $main-font;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   color: $silver-200-color;
+
+  @include tablet {
+    width: 134px;
+    margin-top: 138px;
+    margin-bottom: 23px;
+    margin-left: 58px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  @include desktop {
+    margin-left: 16px;
+  }
 }
 
 .product-card-all__description {
   font-size: 12px;
   line-height: 16px;
   color: $silver-color;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .product-card-all__button {
+  margin-top: 21px;
   padding: 10px 94px;
+
+  @include tablet {
+    width: 249px;
+    margin-top: 77px;
+    padding: 12px 79px;
+    font-size: 16px;
+  }
+
+  @include desktop {
+    width: 172px;
+    margin-top: 82px;
+    padding: 11px 39px;
+  }
 }

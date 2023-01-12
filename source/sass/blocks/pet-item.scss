@@ -1,7 +1,46 @@
-.pet-item {
+.pet-item:not(:last-child) {
   padding-bottom: 14px;
+
+  @include tablet {
+    padding-bottom: 20px;
+  }
 }
 
 .pet-item__label {
+  margin-top: 14px;
   margin-right: 13px;
+}
+
+.pet-item__input {
+  margin: 0;
+  padding-top: 14px;
+  padding-bottom: 13px;
+  padding-left: 20px;
+
+  &:focus {
+    padding-top: 13px;
+    padding-bottom: 12px;
+    padding-left: 19px;
+  }
+
+  &:invalid {
+    padding-top: 13px;
+    padding-bottom: 12px;
+    padding-left: 19px;
+  }
+
+  @include tablet {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &:focus {
+      padding-top: 9px;
+      padding-bottom: 9px;
+    }
+
+    &:invalid {
+      padding-top: 9px;
+      padding-bottom: 9px;
+    }
+  }
 }
