@@ -8,11 +8,13 @@
     <base href="https://htmlacademy-adaptive.github.io/2059277-cat-energy-27/5/">
 </head>
   <body class="page__body">
-    <header class="main-header container">
-      <a class="main-header__logo logo" href="index.html">
-        <img class="logo__image" src="img/logo-mobile.svg" width="34" height="38" alt="Сайт «Cat Energy».">
-        <img class="logo__text" src="img/logo-mobile-text.svg" width="101" height="18" alt="Cat Energy.">
-      </a>
+    <header class="main-header main-header--tablet">
+      <div class="main-header--mobile">
+        <a class="main-header__logo logo" href="index.html">
+          <img class="logo__image" src="img/logo-mobile.svg" width="34" height="38" alt="Сайт «Cat Energy».">
+          <img class="logo__text" src="img/logo-mobile-text.svg" width="101" height="18" alt="Cat Energy.">
+        </a>
+      </div>
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle main-nav__toggle--open" type="button">
           <span class="visually-hidden">Кнопка меню.</span>
@@ -175,8 +177,8 @@
         </div>
       </section>
 
-      <section class="additional-products">
-        <div class="additional-products__wrapper container">
+      <section class="additional-products container">
+        <div class="additional-products__wrapper">
           <h2 class="additional-products__title">Дополнительные товары</h2>
           <ul class="additional-products__list clear-list">
             <li class="additional-products__item complement">
