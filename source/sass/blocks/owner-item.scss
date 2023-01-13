@@ -1,7 +1,83 @@
-.owner-item {
+.owner-item:not(:last-child) {
   padding-bottom: 14px;
+
+  @include tablet {
+    padding-bottom: 20px;
+  }
+
+  @include desktop {
+    padding-bottom: 0;
+  }
 }
 
 .owner-item__label {
+  margin-top: 14px;
   margin-right: 10px;
+}
+
+.owner-item__input {
+  position: relative;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 15px;
+
+  &:focus {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 14px;
+  }
+
+  &:invalid {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 14px;
+  }
+
+  @include tablet {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 20px;
+
+    &:focus {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 19px;
+    }
+
+    &:invalid {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 19px;
+    }
+  }
+}
+
+.owner-item__input--email {
+  position: absolute;
+  top: 17px;
+  right: 10px;
+  width: 17px;
+  height: 13px;
+  stroke: $silver-200-color;
+  content: "";
+
+  @include tablet {
+    top: 20px;
+    right: 20px;
+  }
+}
+
+.owner-item__input--tel {
+  position: absolute;
+  top: 17px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  stroke: $silver-200-color;
+  content: "";
+
+  @include tablet {
+    top: 20px;
+    right: 20px;
+  }
 }

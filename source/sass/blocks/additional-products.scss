@@ -1,24 +1,144 @@
 .additional-products {
-  padding-top: 36px;
+  padding-top: 25px;
+
+  @include tablet {
+    position: relative;
+    padding-top: 8px;
+  }
 
   @include desktop {
-    display: grid;
-    grid-template-columns: 896px 246px;
-    grid-column-gap: 80px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+}
+
+.additional-products::before {
+  @include tablet {
+    content: "";
+    position: absolute;
+    top: 33px;
+    left: -100vw;
+    display: block;
+    width: 200vw;
+    height: 2px;
+    background-color: $green-color;
+    z-index: 1;
+  }
+
+  @include desktop {
+    top: 43px;
+    left: -20vw;
+    width: 200vw;
   }
 }
 
 .additional-products__wrapper {
-  margin-bottom: 55px;
+  margin-bottom: 36px;
+
+  @include tablet {
+    margin-bottom: 69px;
+  }
+
+  @include desktop {
+    margin-bottom: 86px;
+  }
 }
 
 .additional-products__title {
+  margin-top: 0;
+  margin-bottom: 36px;
   font-family: $main-font;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+
+  @include tablet {
+    position: relative;
+    width: 339px;
+    padding-right: 36px;
+    padding-left: 37px;
+    font-size: 36px;
+    line-height: 36px;
+    background-color: $white-color;
+    z-index: 2;
+  }
+
+  @include desktop {
+    margin-bottom: 81px;
+    margin-left: -40px;
+    padding-right: 36px;
+    padding-left: 40px;
+  }
+}
+
+.additional-products__list {
+  @include tablet {
+    padding-bottom: 28px;
+    border: 1px solid $white-600-color;
+  }
+
+  @include desktop {
+    width: 896px;
+    padding-bottom: 0;
+    padding-left: 2px;
+    border: none;
+  }
+}
+
+.additional-products__item {
+  margin-bottom: 19px;
+  padding-top: 12px;
+  border-top: 1px solid $white-600-color;
+
+  @include tablet {
+    margin-bottom: 28px;
+    padding-top: 26px;
+  }
+
+  @include desktop {
+    margin-bottom: 17px;
+    padding-top: 14px;
+  }
+}
+
+.additional-products__item:first-child {
+  @include tablet {
+    border: none;
+  }
+
+  @include desktop {
+    border-top: 1px solid $white-600-color;
+  }
+}
+
+.additional-products__item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 19px;
+  border-bottom: 1px solid $white-600-color;
+
+  @include tablet {
+    border-bottom: none;
+  }
+
+  @include desktop {
+    border-bottom: 1px solid $white-600-color;
+  }
 }
 
 .additional-products__button {
   padding: 10px 109px;
+
+  @include tablet {
+    grid-column: 1 / -1;
+    margin-left: 38px;
+    font-size: 16px;
+  }
+
+  @include desktop {
+    grid-column: 3 / 4;
+    margin-left: 1px;
+    padding: 10px 26px;
+    line-height: 20px;
+  }
 }

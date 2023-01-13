@@ -1,13 +1,36 @@
-.copyright {
-  color: $black-color;
-  background-color: $white-color;
-}
-
 .copyright__logo {
   display: flex;
   justify-content: space-between;
+  padding-top: 5px;
   font-size: 16px;
   line-height: 19px;
   color: $silver-color;
   text-decoration: none;
+
+  &:active {
+    fill: $green-color;
+    opacity: 0.3;
+  }
+
+  @include tablet {
+    width: 163px;
+  }
+
+  @include desktop {
+    width: 167px;
+    padding-top: 7px;
+  }
+}
+
+.copyright__logo-icon {
+  margin-top: -7px;
+  fill: $silver-100-color;
+
+  &:hover {
+    fill: $green-color;
+  }
+
+  &:active {
+    fill: $green-color;
+  }
 }

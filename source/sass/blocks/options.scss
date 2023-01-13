@@ -1,3 +1,33 @@
 .options {
-  background-color: $white-color;
+  display: grid;
+  grid-template-columns: 70px 70px;
+
+  @include tablet {
+    grid-template-columns: 126px 126px;
+  }
+
+  @include desktop {
+    grid-template-columns: 85px 85px;
+  }
+}
+
+.options__term {
+  grid-column: 1 / 2;
+
+  @include tablet {
+    margin-bottom: 5px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid $white-600-color;
+  }
+}
+
+.options__definition {
+  grid-column: 2 / 3;
+  margin-left: 0;
+  text-align: right;
+
+  @include tablet {
+    margin-bottom: 5px;
+    border-bottom: 1px solid $white-600-color;
+  }
 }

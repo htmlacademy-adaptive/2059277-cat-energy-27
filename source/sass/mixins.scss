@@ -3,6 +3,18 @@
   padding: 0;
 }
 
+@mixin mobile-only {
+  @media (max-width: $mobile-width-only) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (min-width: $mobile-width) {
+    @content;
+  }
+}
+
 @mixin tablet {
   @media (min-width: $tablet-width) {
     @content;

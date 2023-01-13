@@ -4,27 +4,55 @@
   @include tablet {
     display: flex;
     justify-content: space-between;
-    padding-top: 24px;
+  }
+}
+
+.main-header--mobile {
+  @include mobile-only {
+    width: 280px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
+
+.main-header--tablet {
+  @include tablet {
+    width: 708px;
+    margin: 0 auto;
+    padding: 0 30px;
   }
 
   @include desktop {
-    justify-content: space-between;
-    padding-top: 53px;
+    width: 1220px;
+    padding: 0 110px;
   }
 }
 
 .main-header__logo {
   width: 192px;
   height: 38px;
+  margin-top: 10px;
+  margin-bottom: 18px;
   background-color: $white-color;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @include tablet {
     width: 174px;
     height: 52px;
+    margin-top: 24px;
+    margin-bottom: 0;
   }
 
   @include desktop {
     width: 202px;
     height: 59px;
+    margin-top: 53px;
   }
 }

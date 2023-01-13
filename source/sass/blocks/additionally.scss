@@ -3,10 +3,49 @@
 }
 
 .additionally__title {
+  position: relative;
+  margin-bottom: 34px;
   font-family: $main-font;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
+
+  @include tablet {
+    margin-bottom: 57px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.additionally__title::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 164px;
+  display: block;
+  width: 200vh;
+  height: 2px;
+  background-color: $green-color;
+  z-index: 1;
+
+  @include tablet {
+    top: 23px;
+    left: 250px;
+  }
+}
+
+.additionally__title::after {
+  @include tablet {
+    content: "";
+    position: absolute;
+    top: 23px;
+    right: 245px;
+    display: block;
+    width: 100vh;
+    height: 2px;
+    background-color: $green-color;
+    z-index: -1;
+  }
 }
 
 .additionally__list {
@@ -19,5 +58,15 @@
   @include desktop {
     grid-template-columns: repeat(4, 221px);
     grid-column-gap: 104px;
+  }
+}
+
+.additionally__item {
+  @include tablet {
+    margin-bottom: 14px;
+  }
+
+  @include desktop {
+    margin-bottom: 0;
   }
 }

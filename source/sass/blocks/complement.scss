@@ -1,13 +1,59 @@
+.complement {
+  @include tablet {
+    display: grid;
+    grid-template-columns: 407px 263px;
+  }
+
+  @include desktop {
+    grid-template-columns: 285px 285px 244px;
+    column-gap: 40px;
+  }
+}
+
 .complement__title {
+  margin-top: 0;
+  margin-bottom: 13px;
   font-family: $main-font;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
   color: $silver-200-color;
+  text-transform: uppercase;
+
+  @include tablet {
+    grid-column: 1 / 2;
+    margin-bottom: 25px;
+    margin-left: 38px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @include desktop {
+    grid-column: 1 / 2;
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
 }
 
 .complement__options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 15px;
   font-size: 14px;
   line-height: 14px;
   color: $silver-color;
+
+  @include tablet {
+    grid-column: 2 / 3;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @include desktop {
+    grid-column: 2 / 3;
+    margin-top: 11px;
+    margin-bottom: 0;
+  }
 }

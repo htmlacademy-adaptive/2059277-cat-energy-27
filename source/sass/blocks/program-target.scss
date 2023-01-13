@@ -1,3 +1,20 @@
 .program-target {
   border: none;
 }
+
+.program-target__list {
+  padding-bottom: 19px;
+  border-bottom: 1px solid $white-400-color;
+
+  @include tablet {
+    padding: 25px 28px;
+    border: 1px solid $white-400-color;
+  }
+}
+
+.program-target__item {
+  @include tablet {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

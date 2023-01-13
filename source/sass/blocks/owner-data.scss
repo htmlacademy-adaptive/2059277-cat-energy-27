@@ -3,15 +3,57 @@
 }
 
 .owner-data__title {
+  position: relative;
+  margin-bottom: 35px;
   font-family: $main-font;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
+
+  @include tablet {
+    margin-bottom: 76px;
+    font-size: 36px;
+    line-height: 36px;
+    background: $white-700-color;
+    z-index: 0;
+  }
+}
+
+.owner-data__title::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 205px;
+  display: block;
+  width: 200vh;
+  height: 2px;
+  background-color: $green-color;
+  z-index: -1;
+
+  @include tablet {
+    top: 23px;
+    left: 550px;
+  }
+}
+
+.owner-data__title::after {
+  @include tablet {
+    content: "";
+    position: absolute;
+    top: 23px;
+    right: 550px;
+    display: block;
+    width: 100vh;
+    height: 2px;
+    background-color: $green-color;
+    z-index: -1;
+  }
 }
 
 .owner-data__list {
   @include desktop {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 569px 572px;
+    column-gap: 78px;
   }
 }
