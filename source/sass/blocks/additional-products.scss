@@ -17,13 +17,19 @@
   @include tablet {
     content: "";
     position: absolute;
-    top: 43px;
-    left: 0;
+    top: 33px;
+    left: -100vw;
     display: block;
-    width: 1000vh;
+    width: 200vw;
     height: 2px;
     background-color: $green-color;
     z-index: 1;
+  }
+
+  @include desktop {
+    top: 43px;
+    left: -20vw;
+    width: 200vw;
   }
 }
 
@@ -60,9 +66,9 @@
 
   @include desktop {
     margin-bottom: 81px;
-    margin-left: -36px;
+    margin-left: -40px;
     padding-right: 36px;
-    padding-left: 37px;
+    padding-left: 40px;
   }
 }
 

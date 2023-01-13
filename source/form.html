@@ -7,11 +7,13 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
-    <header class="main-header container">
-      <a class="main-header__logo logo" href="index.html">
-        <img class="logo__image" src="img/logo-mobile.svg" width="34" height="38" alt="Сайт «Cat Energy».">
-        <img class="logo__text" src="img/logo-mobile-text.svg" width="101" height="18" alt="Cat Energy.">
-      </a>
+    <header class="main-header main-header--tablet">
+      <div class="main-header--mobile">
+        <a class="main-header__logo logo" href="index.html">
+          <img class="logo__image" src="img/logo-mobile.svg" width="34" height="38" alt="Сайт «Cat Energy».">
+          <img class="logo__text" src="img/logo-mobile-text.svg" width="101" height="18" alt="Cat Energy.">
+        </a>
+      </div>
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle main-nav__toggle--open" type="button">
           <span class="visually-hidden">Кнопка меню.</span>
@@ -28,8 +30,8 @@
                 Каталог продукции
               </a>
             </li>
-            <li class="site-list__item site-list__item--current">
-              <a class="site-list__link" href="#">
+            <li class="site-list__item">
+              <a class="site-list__link site-list__item--current" href="#">
                 Подбор программы
               </a>
             </li>
