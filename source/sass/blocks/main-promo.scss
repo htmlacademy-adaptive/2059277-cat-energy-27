@@ -29,22 +29,52 @@
   position: absolute;
   top: 166px;
   right: 20px;
-  content: url("../img/promo-image-mobile.png");
+  width: 280px;
+  height: 270px;
+  background-image: url("../img/promo-image-mobile.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  content: "";
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo-image-mobile@2x.png");
+    background-size: 280px auto;
+  }
 
   @include tablet {
     top: 265px;
     left: 30px;
     width: 709px;
     height: 609px;
-    content: url("../img/promo-image-tablet.png");
+    background-image: url("../img/promo-image-tablet.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: "";
     z-index: 1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-image-tablet@2x.png");
+      background-size: 709px auto;
+    }
   }
 
   @include desktop {
     top: 30px;
     left: 560px;
-    content: url("../img/promo-image-desktop.png");
-    z-index: 1;
+    width: 552px;
+    height: 499px;
+    background-image: url("../img/promo-image-desktop.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: "";
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-image-desktop@2x.png");
+      background-size: 552px auto;
+    }
   }
 }
 
@@ -58,6 +88,11 @@
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-background-index@2x.jpg");
+    background-size: 100% auto;
+  }
 
   @include tablet {
     width: 550px;
