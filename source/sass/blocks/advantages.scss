@@ -72,6 +72,11 @@
     background-position: 73% 70%;
     background-size: 28%;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/number-one@2x.png");
+      background-size: 28%;
+    }
   }
 }
 
@@ -81,6 +86,11 @@
     background-position: 90% 70%;
     background-size: 45%;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/number-two@2x.png");
+      background-size: 45%;
+    }
   }
 }
 
@@ -92,6 +102,11 @@
     background-position: 92% 60%;
     background-size: 45%;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/number-three@2x.png");
+      background-size: 45%;
+    }
   }
 }
 
@@ -101,6 +116,11 @@
     background-position: 97% 70%;
     background-size: 48%;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/number-four@2x.png");
+      background-size: 48%;
+    }
   }
 }
 

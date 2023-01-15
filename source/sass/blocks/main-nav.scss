@@ -4,19 +4,19 @@
 
   @include tablet {
     width: 440px;
-    margin-top: 42px;
+    margin-top: 18px;
     margin-left: 0;
   }
 
   @include desktop {
     width: 478px;
-    margin-top: 69px;
+    margin-top: 16px;
   }
 }
 
 .main-nav__toggle {
   position: absolute;
-  top: -43px;
+  top: -28px;
   right: 20px;
   display: block;
   width: 30px;
@@ -61,7 +61,7 @@
 
 .main-nav--opened .main-nav__toggle {
   @include mobile-only {
-    top: -53px;
+    top: -36px;
     right: 20px;
 
     &::before,
@@ -94,7 +94,7 @@
 .main-nav--opened .main-nav__wrapper {
   @include mobile-only {
     position: absolute;
-    top: 0;
+    top: 10px;
     right: 0;
     left: 0;
     z-index: 10;

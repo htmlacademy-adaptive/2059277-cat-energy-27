@@ -199,11 +199,21 @@
   background-size: cover;
   background-repeat: no-repeat;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/cat-slider-mobile@2x.png");
+    background-size: 280px auto;
+  }
+
   @include tablet {
     width: 560px;
     height: 512px;
     margin: 0 auto;
     background-image: url("../img/cat-slider-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-slider-tablet@2x.png");
+      background-size: 560px auto;
+    }
   }
 
   @include desktop {
