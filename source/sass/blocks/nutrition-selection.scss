@@ -185,20 +185,22 @@
   }
 }
 
-.nutrition-selection__link::after {
-  position: absolute;
-  top: 6px;
-  right: -50px;
-  width: 32px;
+.nutrition-selection__link-icon {
+  display: block;
+  width: 24px;
   height: 10px;
-  background-image: url("../img/icon-arrow.svg");
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  content: "";
+  margin-top: -15px;
+  margin-left: 121px;
+  transform: scaleX(1);
+  transform-origin: center left;
+  transition: transform 0.5s;
 
   @include tablet {
-    top: 8px;
-    right: -57px;
+    margin-top: -20px;
+    margin-left: 185px;
   }
+}
+
+.nutrition-selection__link:hover .nutrition-selection__link-icon {
+  transform: scaleX(1.4);
 }
