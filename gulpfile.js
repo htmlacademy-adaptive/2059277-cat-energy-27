@@ -83,7 +83,7 @@ const sprite = () => {
 // Copy
 const copy = (done) => {
   return gulp.src([
-    'source/fonts/*.{woff2,woff}',
+    'source/fonts/**/*.{woff2,woff}',
     'source/*.ico',
   ],{
     base: 'source'
@@ -137,7 +137,7 @@ export const build = gulp.series(
     svg,
     sprite,
     createWebp
-  ),
+  )
 );
 
 // Default
@@ -156,4 +156,5 @@ export default gulp.series(
   gulp.series(
     server,
     watcher
-    ));
+  )
+);
