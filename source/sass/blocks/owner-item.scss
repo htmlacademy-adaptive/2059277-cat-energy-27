@@ -13,23 +13,28 @@
 .owner-item__label {
   margin-top: 14px;
   margin-right: 10px;
+
+  @include tablet {
+    margin-top: 12px;
+    margin-right: 16px;
+  }
 }
 
 .owner-item__input {
   position: relative;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   padding-left: 15px;
 
   &:focus {
-    padding-top: 13px;
-    padding-bottom: 13px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     padding-left: 14px;
   }
 
   &:invalid {
-    padding-top: 13px;
-    padding-bottom: 13px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     padding-left: 14px;
   }
 
@@ -54,30 +59,30 @@
 
 .owner-item__input--email {
   position: absolute;
-  top: 17px;
-  right: 10px;
-  width: 17px;
-  height: 13px;
+  top: 13px;
+  right: 15px;
+  width: 20px;
+  height: 20px;
   stroke: $silver-200-color;
   content: "";
 
   @include tablet {
-    top: 20px;
-    right: 20px;
+    top: 17px;
+    right: 17px;
   }
 }
 
 .owner-item__input--tel {
   position: absolute;
-  top: 17px;
-  right: 10px;
-  width: 15px;
-  height: 15px;
+  top: 15px;
+  right: 15px;
+  width: 17px;
+  height: 17px;
   stroke: $silver-200-color;
   content: "";
 
   @include tablet {
-    top: 20px;
-    right: 20px;
+    top: 17px;
+    right: 17px;
   }
 }

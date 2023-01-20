@@ -3,7 +3,7 @@
   grid-template-columns: 70px 70px;
 
   @include tablet {
-    grid-template-columns: 126px 126px;
+    grid-template-columns: 126px 120px;
   }
 
   @include desktop {

@@ -4,10 +4,6 @@
   @include tablet {
     padding-bottom: 18px;
   }
-
-  @include desktop {
-    padding-bottom: 13px;
-  }
 }
 
 .choice__label {
@@ -38,8 +34,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   background-color: $white-color;
   border: 1px solid $white-600-color;
 

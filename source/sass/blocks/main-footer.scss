@@ -30,7 +30,14 @@
   }
 
   @include tablet {
-    margin-top: 5px;
+    margin-top: 2px;
+  }
+}
+
+.main-footer__logo-icon {
+  @include tablet {
+    width: 143px;
+    height: 27px;
   }
 }
 
@@ -45,9 +52,9 @@
   @include tablet {
     margin-top: 0;
     margin-left: 0;
-    padding-top: 9px;
+    padding-top: 8px;
     padding-bottom: 0;
-    padding-left: 34px;
+    padding-left: 24px;
     border: none;
   }
 }

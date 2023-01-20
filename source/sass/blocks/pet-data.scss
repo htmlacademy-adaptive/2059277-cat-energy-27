@@ -3,10 +3,21 @@
 }
 
 .pet-data__list {
-  padding-bottom: 24px;
-  border-bottom: 1px solid $white-400-color;
+  position: relative;
+  padding-bottom: 22px;
+}
+
+.pet-data__list::after {
+  content: "";
+  position: absolute;
+  top: 186px;
+  left: -10vw;
+  display: block;
+  width: 105vw;
+  height: 1px;
+  background-color: $white-400-color;
 
   @include tablet {
-    border: none;
+    display: none;
   }
 }

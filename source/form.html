@@ -9,6 +9,7 @@
     <link rel="icon" href="img/favicons/favicon-32.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/favicon-180.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font">
   </head>
   <body class="page__body">
 
@@ -204,8 +205,9 @@
 
       <section class="contacts">
         <div class="contacts__wrapper container">
-          <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
-          <p class="contacts__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <h3 class="contacts__title">Приглашаем <br>
+            к сотрудничеству дилеров!</h3>
+          <p class="contacts__description">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
         </div>
         <div class="contacts__map map">
           <h3 class="visually-hidden">Как до нас добраться</h3>
@@ -226,7 +228,7 @@
         <a class="main-footer__logo" href="#">
           <picture>
             <source media="(min-width: 768px)" srcset="img/footer-logo-tablet.svg" width="143" height="27">
-            <img src="img/footer-logo.svg" width="128" height="24" alt="Сайт «Cat Energy».">
+            <img class="main-footer__logo-icon" src="img/footer-logo.svg" width="128" height="24" alt="Сайт «Cat Energy».">
           </picture>
         </a>
         <div class="main-footer__social social">
