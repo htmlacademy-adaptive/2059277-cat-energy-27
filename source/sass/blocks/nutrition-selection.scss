@@ -1,5 +1,5 @@
 .nutrition-selection {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 
   @include tablet {
     margin-bottom: 45px;
@@ -8,7 +8,7 @@
   @include desktop {
     display: flex;
     margin: 0 auto;
-    margin-bottom: 71px;
+    margin-bottom: 69px;
   }
 }
 
@@ -17,23 +17,23 @@
   margin-top: 20px;
   padding-top: 31px;
   padding-right: 0;
-  padding-bottom: 18px;
+  padding-bottom: 20px;
   padding-left: 0;
   background-color: $white-100-color;
 
   @include tablet {
     margin-top: 0;
     margin-bottom: 30px;
-    padding-top: 77px;
+    padding-top: 74px;
     padding-right: 0;
-    padding-bottom: 53px;
+    padding-bottom: 55px;
     padding-left: 0;
   }
 
   @include desktop {
     width: 570px;
     margin-bottom: 0;
-    padding-bottom: 55px;
+    padding-bottom: 63px;
   }
 }
 
@@ -52,6 +52,7 @@
 .nutrition-selection__title {
   position: relative;
   margin-top: 0;
+  margin-right: 20px;
   margin-bottom: 29px;
   margin-left: 92px;
   font-family: $main-font;
@@ -164,7 +165,6 @@
 }
 
 .nutrition-selection__link {
-  position: relative;
   margin-left: 20px;
   font-family: $main-font;
   font-size: 16px;
@@ -186,18 +186,17 @@
 }
 
 .nutrition-selection__link-icon {
-  display: block;
-  width: 24px;
-  height: 10px;
-  margin-top: -15px;
-  margin-left: 121px;
-  transform: scaleX(1);
-  transform-origin: center left;
-  transition: transform 0.5s;
+  margin-bottom: 0;
+  margin-left: 14px;
 
   @include tablet {
-    margin-top: -20px;
-    margin-left: 185px;
+    width: 32px;
+    height: 10px;
+    margin-bottom: 4px;
+    margin-left: 18px;
+    transform: scaleX(1);
+    transform-origin: center left;
+    transition: transform 0.5s;
   }
 }
 

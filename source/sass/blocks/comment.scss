@@ -4,6 +4,7 @@
 
 .comment__title {
   position: relative;
+  width: 150px;
   margin-bottom: 38px;
   font-family: $main-font;
   font-size: 24px;
@@ -11,6 +12,7 @@
   font-weight: 400;
 
   @include tablet {
+    width: 200px;
     margin-bottom: 76px;
     font-size: 36px;
     line-height: 36px;
@@ -23,7 +25,7 @@
   top: 15px;
   left: 143px;
   display: block;
-  width: 200vh;
+  width: 50vw;
   height: 2px;
   background-color: $green-color;
   z-index: 1;
@@ -31,6 +33,11 @@
   @include tablet {
     top: 23px;
     left: 220px;
+    width: 63vw;
+  }
+
+  @include desktop {
+    width: 77vw;
   }
 }
 
@@ -41,7 +48,7 @@
     top: 23px;
     right: 215px;
     display: block;
-    width: 100vh;
+    width: 100vw;
     height: 2px;
     background-color: $green-color;
     z-index: -1;
@@ -53,7 +60,7 @@
   width: 253px;
   margin-top: 0;
   margin-bottom: 0;
-  padding: 10px 12px 126px 15px;
+  padding: 10px 12px 102px 15px;
   font-family: $main-font;
   font-size: 16px;
   line-height: 18px;
@@ -68,7 +75,7 @@
   }
 
   &:focus {
-    padding: 9px 11px 125px 14px;
+    padding: 9px 11px 101px 14px;
     border: 2px solid $silver-color;
     outline: none;
   }
@@ -80,17 +87,17 @@
   }
 
   @include tablet {
-    width: 630px;
-    padding: 10px 19px 134px;
+    width: 591px;
+    padding: 10px 19px 101px;
     font-size: 20px;
     line-height: 30px;
 
     &:focus {
-      padding: 9px 18px 133px;
+      padding: 9px 18px 100px;
     }
 
     &:invalid {
-      padding: 9px 18px 133px;
+      padding: 9px 18px 100px;
     }
   }
 

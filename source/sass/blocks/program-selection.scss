@@ -4,15 +4,15 @@
 
   @include tablet {
     width: 630px;
-    padding-top: 65px;
+    padding-top: 60px;
     padding-right: 67px;
-    padding-left: 70px;
+    padding-left: 68px;
     border: none;
   }
 
   @include desktop {
     width: 1220px;
-    padding-top: 74px;
+    padding-top: 72px;
     padding-right: 110px;
     padding-left: 110px;
     border: none;
@@ -68,13 +68,13 @@
 
   @include desktop {
     grid-column: 1 / 2;
-    margin-bottom: 69px;
+    margin-bottom: 46px;
   }
 }
 
 .program-selection__target {
   @include reset-indents;
-  margin-bottom: 26px;
+  margin-bottom: 28px;
 
   @include tablet {
     margin-bottom: 75px;
@@ -82,7 +82,7 @@
 
   @include desktop {
     grid-column: 2 / 3;
-    margin-bottom: 69px;
+    margin-bottom: 46px;
   }
 }
 
@@ -91,7 +91,7 @@
   margin-bottom: 24px;
 
   @include tablet {
-    margin-bottom: 65px;
+    margin-bottom: 63px;
   }
 
   @include desktop {
@@ -114,10 +114,10 @@
 
 .program-selection__additionally {
   @include reset-indents;
-  margin-bottom: 34px;
+  margin-bottom: 37px;
 
   @include tablet {
-    margin-bottom: 22px;
+    margin-bottom: 28px;
   }
 
   @include desktop {
@@ -141,19 +141,19 @@
 .program-selection__button {
   width: 280px;
   margin-bottom: 21px;
-  padding: 7px 44px;
+  padding: 11px 44px;
   font-size: 16px;
 
   @include tablet {
     width: 282px;
     margin-bottom: 0;
-    padding: 13px 45px;
+    padding: 16px 45px;
     font-size: 20px;
   }
 
   @include desktop {
     width: 568px;
-    padding: 13px 188px;
+    padding: 16px 188px;
   }
 }
 

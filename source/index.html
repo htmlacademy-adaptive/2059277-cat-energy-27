@@ -10,6 +10,7 @@
     <link rel="icon" href="img/favicons/favicon-32.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/favicon-180.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font">
   </head>
   <body class="page__body">
 
@@ -87,7 +88,7 @@
           <h3 class="nutrition-selection__title nutrition-selection__title--slim">Похудение</h3>
           <p class="nutrition-selection__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a class="nutrition-selection__link" href="catalog.html">
-            Каталог slim
+            <span class="nutrition-selection__link-text">Каталог slim</span>
             <svg class="nutrition-selection__link-icon" width="24" height="12">
               <use xlink:href="#icon-arrow"></use>
             </svg>
@@ -97,7 +98,7 @@
           <h3 class="nutrition-selection__title nutrition-selection__title--pro">Набор массы</h3>
           <p class="nutrition-selection__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
           <a class="nutrition-selection__link" href="catalog.html">
-            Каталог pro
+            <span class="nutrition-selection__link-text">Каталог pro</span>
             <svg class="nutrition-selection__link-icon" width="24" height="12">
               <use xlink:href="#icon-arrow"></use>
             </svg>
@@ -144,8 +145,8 @@
             </dl>
           </div>
           <p class="example__expenses">Затраты на питание: <span>15 000 руб.</span></p>
+          <h2 class="visually-hidden">До/после</h2>
           <span class="example__cat-slider">
-            <h2 class="visually-hidden">До/после</h2>
           </span>
         </div>
       </section>
@@ -175,7 +176,7 @@
         <a class="main-footer__logo" href="#">
           <picture>
             <source media="(min-width: 768px)" srcset="img/footer-logo-tablet.svg" width="143" height="27">
-            <img src="img/footer-logo.svg" width="128" height="24" alt="Сайт «Cat Energy».">
+            <img class="main-footer__logo-icon" src="img/footer-logo.svg" width="128" height="24" alt="Сайт «Cat Energy».">
           </picture>
         </a>
         <div class="main-footer__social social">

@@ -3,12 +3,29 @@
 }
 
 .program-target__list {
-  padding-bottom: 19px;
-  border-bottom: 1px solid $white-400-color;
+  position: relative;
+  padding-bottom: 24px;
 
   @include tablet {
-    padding: 25px 28px;
+    padding: 0 28px;
+    padding-top: 20px;
+    padding-bottom: 27px;
     border: 1px solid $white-400-color;
+  }
+}
+
+.program-target__list::after {
+  content: "";
+  position: absolute;
+  top: 134px;
+  left: -10vw;
+  display: block;
+  width: 105vw;
+  height: 1px;
+  background-color: $white-400-color;
+
+  @include tablet {
+    display: none;
   }
 }
 

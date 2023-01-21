@@ -1,23 +1,33 @@
 .additional-products {
-  padding-top: 25px;
+  position: relative;
+  padding-top: 27px;
 
   @include tablet {
-    position: relative;
-    padding-top: 8px;
+    padding-top: 7px;
   }
 
   @include desktop {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 14px;
   }
 }
 
 .additional-products::before {
+  content: "";
+  position: absolute;
+  top: 42px;
+  left: 268px;
+  display: block;
+  width: 16vw;
+  height: 2px;
+  background-color: $green-color;
+  z-index: 1;
+
   @include tablet {
     content: "";
     position: absolute;
-    top: 33px;
+    top: 29px;
     left: -100vw;
     display: block;
     width: 200vw;
@@ -27,8 +37,8 @@
   }
 
   @include desktop {
-    top: 43px;
-    left: -20vw;
+    top: 36px;
+    left: -100vw;
     width: 200vw;
   }
 }
@@ -37,7 +47,7 @@
   margin-bottom: 36px;
 
   @include tablet {
-    margin-bottom: 69px;
+    margin-bottom: 67px;
   }
 
   @include desktop {
@@ -52,10 +62,12 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+  background-color: $white-color;
 
   @include tablet {
     position: relative;
     width: 339px;
+    margin-bottom: 80px;
     padding-right: 36px;
     padding-left: 37px;
     font-size: 36px;
@@ -65,7 +77,7 @@
   }
 
   @include desktop {
-    margin-bottom: 81px;
+    margin-bottom: 80px;
     margin-left: -40px;
     padding-right: 36px;
     padding-left: 40px;
@@ -74,7 +86,7 @@
 
 .additional-products__list {
   @include tablet {
-    padding-bottom: 28px;
+    padding-bottom: 10px;
     border: 1px solid $white-600-color;
   }
 
@@ -87,13 +99,13 @@
 }
 
 .additional-products__item {
-  margin-bottom: 19px;
+  margin-bottom: 20px;
   padding-top: 12px;
   border-top: 1px solid $white-600-color;
 
   @include tablet {
     margin-bottom: 28px;
-    padding-top: 26px;
+    padding-top: 27px;
   }
 
   @include desktop {

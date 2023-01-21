@@ -1,7 +1,6 @@
 .product-card-all {
+  position: relative;
   padding: 25px 0;
-  border-top: 1px solid $white-550-color;
-  border-bottom: 1px solid $white-550-color;
   background-image: url("../img/icon-plus.svg");
   background-position: center 15%;
   background-size: 30px 30px;
@@ -9,15 +8,52 @@
   text-align: center;
 
   @include tablet {
-    margin-top: 102px;
+    margin-top: 82px;
     margin-bottom: 60px;
-    padding: 0 38px;
-    padding-bottom: 38px;
+    padding-top: 24px;
+    padding-right: 37px;
+    padding-bottom: 36px;
+    padding-left: 38px;
     border: 2px solid $white-100-color;
     background-image: url("../img/icon-plus.svg");
-    background-position: center 15%;
+    background-position: center 14%;
     background-size: 60px 60px;
     background-repeat: no-repeat;
+  }
+
+  @include desktop {
+    padding-top: 18px;
+    background-position: center 13%;
+  }
+}
+
+.product-card-all::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -10vw;
+  display: block;
+  width: 105vw;
+  height: 1px;
+  background-color: $white-550-color;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.product-card-all::before {
+  content: "";
+  position: absolute;
+  top: 210px;
+  left: -10vw;
+  display: block;
+  width: 105vw;
+  height: 1px;
+  background-color: $white-550-color;
+
+  @include tablet {
+    display: none;
   }
 }
 
@@ -27,17 +63,18 @@
 }
 
 .product-card-all__title {
-  margin-top: 53px;
+  margin-top: 55px;
   margin-bottom: 8px;
   font-family: $main-font;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   color: $silver-200-color;
+  text-transform: uppercase;
 
   @include tablet {
     width: 134px;
-    margin-top: 138px;
+    margin-top: 135px;
     margin-bottom: 23px;
     margin-left: 58px;
     font-size: 20px;
@@ -55,25 +92,32 @@
   color: $silver-color;
 
   @include tablet {
+    margin-right: -5px;
+    margin-left: 19px;
     font-size: 16px;
     line-height: 18px;
+  }
+
+  @include desktop {
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
 .product-card-all__button {
   margin-top: 21px;
   padding: 10px 94px;
+  font-size: 16px;
 
   @include tablet {
     width: 249px;
-    margin-top: 77px;
+    margin-top: 85px;
     padding: 12px 79px;
-    font-size: 16px;
   }
 
   @include desktop {
-    width: 172px;
-    margin-top: 82px;
+    width: 168px;
+    margin-top: 85px;
     padding: 11px 39px;
   }
 }
