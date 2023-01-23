@@ -1,6 +1,10 @@
 .contacts {
   position: relative;
   background-color: $white-100-color;
+
+  &--index {
+    background-color: $white-color;
+  }
 }
 
 .contacts__wrapper {
@@ -20,7 +24,7 @@
     top: 92px;
     right: 53%;
     width: 425px;
-    padding: 58px 62px 41px 80px;
+    padding: 58px 62px 61px 80px;
     grid-template-columns: 160px 165px;
     grid-column-gap: 88px;
     background-color: $white-color;
@@ -45,7 +49,7 @@
   }
 
   @include desktop {
-    margin-top: 0;
+    margin-top: 5px;
   }
 }
 
@@ -58,18 +62,20 @@
   color: $silver-color;
 
   @include tablet {
+    margin-top: -4px;
     font-size: 16px;
     text-align: right;
   }
 
   @include desktop {
+    margin-top: 0;
     text-align: left;
   }
-}
 
-.contacts__description span {
-  @include tablet {
-    display: block;
-    margin-top: 20px;
+  span {
+    @include tablet {
+      display: block;
+      margin-top: 20px;
+    }
   }
 }

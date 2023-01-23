@@ -22,9 +22,9 @@
 
 .owner-item__input {
   position: relative;
-  padding-top: 9px;
-  padding-bottom: 9px;
-  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 11px;
+  padding-left: 13px;
 
   &:focus {
     padding-top: 8px;
@@ -57,7 +57,7 @@
   }
 }
 
-.owner-item__input--email {
+.owner-item__image--email {
   position: absolute;
   top: 13px;
   right: 15px;
@@ -72,7 +72,7 @@
   }
 }
 
-.owner-item__input--tel {
+.owner-item__image--tel {
   position: absolute;
   top: 15px;
   right: 15px;

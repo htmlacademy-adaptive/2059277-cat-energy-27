@@ -1,5 +1,5 @@
 .choice:not(:last-child) {
-  padding-bottom: 19px;
+  padding-bottom: 18px;
 
   @include tablet {
     padding-bottom: 18px;
@@ -103,7 +103,7 @@
 
 .choice__label-name {
   display: block;
-  padding-top: 6px;
+  padding-top: 8px;
   margin-left: 45px;
   font-family: $main-font;
   font-size: 16px;
@@ -114,6 +114,7 @@
 
   @include tablet {
     margin-left: 60px;
+    padding-top: 6px;
     font-size: 20px;
     line-height: 30px;
   }

@@ -5,19 +5,19 @@
 .pet-data__list {
   position: relative;
   padding-bottom: 22px;
-}
 
-.pet-data__list::after {
-  content: "";
-  position: absolute;
-  top: 186px;
-  left: -10vw;
-  display: block;
-  width: 105vw;
-  height: 1px;
-  background-color: $white-400-color;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 186px;
+    left: -10vw;
+    display: block;
+    width: 105vw;
+    height: 1px;
+    background-color: $white-400-color;
 
-  @include tablet {
-    display: none;
+    @include tablet {
+      display: none;
+    }
   }
 }

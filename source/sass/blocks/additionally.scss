@@ -17,41 +17,41 @@
     font-size: 36px;
     line-height: 36px;
   }
-}
 
-.additionally__title::before {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 164px;
-  display: block;
-  width: 43vw;
-  height: 2px;
-  background-color: $green-color;
-  z-index: 1;
-
-  @include tablet {
-    top: 23px;
-    left: 250px;
-    width: 59vw;
-  }
-
-  @include desktop {
-    width: 75vw;
-  }
-}
-
-.additionally__title::after {
-  @include tablet {
+  &::before {
     content: "";
     position: absolute;
-    top: 23px;
-    right: 245px;
+    top: 15px;
+    left: 164px;
     display: block;
-    width: 100vw;
+    width: 43vw;
     height: 2px;
     background-color: $green-color;
-    z-index: -1;
+    z-index: 1;
+
+    @include tablet {
+      top: 23px;
+      left: 250px;
+      width: 59vw;
+    }
+
+    @include desktop {
+      width: 75vw;
+    }
+  }
+
+  &::after {
+    @include tablet {
+      content: "";
+      position: absolute;
+      top: 23px;
+      right: 262px;
+      display: block;
+      width: 100vw;
+      height: 2px;
+      background-color: $green-color;
+      z-index: -1;
+    }
   }
 }
 
