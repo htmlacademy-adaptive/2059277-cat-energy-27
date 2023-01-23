@@ -6,27 +6,27 @@
     display: flex;
     justify-content: space-between;
   }
+
+  &--tablet {
+    @include tablet {
+      width: 708px;
+      margin: 0 auto;
+      padding: 0 30px;
+    }
+
+    @include desktop {
+      width: 1220px;
+      padding: 0 110px;
+      padding-top: 53px;
+    }
+  }
 }
 
-.main-header--mobile {
+.main-header__mobile {
   @include mobile-only {
     width: 280px;
     margin: 0 auto;
     padding: 0 20px;
-  }
-}
-
-.main-header--tablet {
-  @include tablet {
-    width: 708px;
-    margin: 0 auto;
-    padding: 0 30px;
-  }
-
-  @include desktop {
-    width: 1220px;
-    padding: 0 110px;
-    padding-top: 53px;
   }
 }
 

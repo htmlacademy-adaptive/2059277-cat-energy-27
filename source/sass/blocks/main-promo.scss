@@ -23,57 +23,59 @@
     margin-bottom: 82px;
     background-image: none;
   }
-}
 
-.main-promo__wrapper::after {
-  position: absolute;
-  top: 166px;
-  right: 20px;
-  width: 280px;
-  height: 270px;
-  background-image: url("../img/promo-image-mobile.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  content: "";
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/promo-image-mobile@2x.png");
-    background-size: 280px auto;
-  }
-
-  @include tablet {
-    top: 265px;
-    left: 30px;
-    width: 709px;
-    height: 609px;
-    background-image: url("../img/promo-image-tablet.png");
+  &::after {
+    position: absolute;
+    top: 166px;
+    left: 50%;
+    transform: translateX(-140px);
+    width: 280px;
+    height: 270px;
+    background-image: url("../img/promo-image-mobile.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     content: "";
-    z-index: 1;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/promo-image-tablet@2x.png");
-      background-size: 709px auto;
+      background-image: url("../img/promo-image-mobile@2x.png");
+      background-size: 280px auto;
     }
-  }
 
-  @include desktop {
-    top: 30px;
-    left: 560px;
-    width: 552px;
-    height: 499px;
-    background-image: url("../img/promo-image-desktop.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    content: "";
+    @include tablet {
+      top: 265px;
+      left: 30px;
+      transform: none;
+      width: 709px;
+      height: 609px;
+      background-image: url("../img/promo-image-tablet.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      content: "";
+      z-index: 1;
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/promo-image-desktop@2x.png");
-      background-size: 552px auto;
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/promo-image-tablet@2x.png");
+        background-size: 709px auto;
+      }
+    }
+
+    @include desktop {
+      top: 30px;
+      left: 560px;
+      width: 552px;
+      height: 499px;
+      background-image: url("../img/promo-image-desktop.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      content: "";
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/promo-image-desktop@2x.png");
+        background-size: 552px auto;
+      }
     }
   }
 }
@@ -116,6 +118,7 @@
 }
 
 .main-promo__title {
+  position: relative;
   width: 280px;
   margin: 0 auto;
   margin-bottom: 25px;
@@ -159,7 +162,7 @@
   position: relative;
   width: 280px;
   margin: 0 auto;
-  padding: 10px 44px;
+  padding: 11px 44px;
   z-index: 2;
 
   @include tablet {

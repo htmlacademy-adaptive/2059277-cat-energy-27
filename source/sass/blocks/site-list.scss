@@ -59,7 +59,7 @@
   }
 }
 
-.site-list__item--current {
+.site-list__link--current {
   @include tablet {
     border-bottom: 2px solid $green-color;
   }

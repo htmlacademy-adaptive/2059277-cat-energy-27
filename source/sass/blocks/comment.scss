@@ -17,41 +17,41 @@
     font-size: 36px;
     line-height: 36px;
   }
-}
 
-.comment__title::before {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 143px;
-  display: block;
-  width: 50vw;
-  height: 2px;
-  background-color: $green-color;
-  z-index: 1;
-
-  @include tablet {
-    top: 23px;
-    left: 220px;
-    width: 63vw;
-  }
-
-  @include desktop {
-    width: 77vw;
-  }
-}
-
-.comment__title::after {
-  @include tablet {
+  &::before {
     content: "";
     position: absolute;
-    top: 23px;
-    right: 215px;
+    top: 15px;
+    left: 143px;
     display: block;
-    width: 100vw;
+    width: 50vw;
     height: 2px;
     background-color: $green-color;
-    z-index: -1;
+    z-index: 1;
+
+    @include tablet {
+      top: 23px;
+      left: 220px;
+      width: 63vw;
+    }
+
+    @include desktop {
+      width: 77vw;
+    }
+  }
+
+  &::after {
+    @include tablet {
+      content: "";
+      position: absolute;
+      top: 23px;
+      right: 245px;
+      display: block;
+      width: 100vw;
+      height: 2px;
+      background-color: $green-color;
+      z-index: -1;
+    }
   }
 }
 

@@ -1,0 +1,30 @@
+.main-desktop {
+  position: relative;
+
+  @include desktop {
+    display: block;
+    height: 694px;
+    margin-bottom: 85px;
+  }
+
+  &::after {
+    @include desktop {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      background-color: #68b738;
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-background-index-desktop.jpg");
+      background-position: right;
+      background-size: cover;
+      background-repeat: no-repeat;
+      content: "";
+      z-index: -1;
+
+      @media (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-background-index-desktop@2x.jpg");
+      }
+    }
+  }
+}

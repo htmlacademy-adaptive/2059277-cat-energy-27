@@ -91,13 +91,13 @@
     grid-row: 3 / 4;
     margin-bottom: 62px;
   }
-}
 
-.example__block:nth-child(1) {
-  margin-right: 32px;
+  &:nth-child(1) {
+    margin-right: 32px;
 
-  @include tablet {
-    margin-right: 42px;
+    @include tablet {
+      margin-right: 42px;
+    }
   }
 }
 
@@ -175,18 +175,18 @@
     margin-left: 0;
     text-align: left;
   }
-}
 
-.example__expenses span {
-  @include tablet {
-    display: block;
-    margin-top: 10px;
-  }
+  span {
+    @include tablet {
+      display: block;
+      margin-top: 10px;
+    }
 
-  @include desktop {
-    display: inline;
-    margin-top: 0;
-    margin-left: 61px;
+    @include desktop {
+      display: inline;
+      margin-top: 0;
+      margin-left: 61px;
+    }
   }
 }
 
