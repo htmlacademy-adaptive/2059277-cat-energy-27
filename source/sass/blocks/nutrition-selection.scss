@@ -7,8 +7,9 @@
 
   @include desktop {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
-    margin-bottom: 67px;
+    margin-bottom: -4px;
   }
 }
 
@@ -32,7 +33,7 @@
 
   @include desktop {
     width: 570px;
-    margin-bottom: 0;
+    margin-bottom: 71px;
     padding-bottom: 59px;
   }
 
